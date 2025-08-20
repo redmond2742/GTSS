@@ -35,3 +35,4 @@ jobs:
           lfs: true
           publish_dir: ./docs/_site
           publish_branch: gh-pages
+          force_orphan: true
