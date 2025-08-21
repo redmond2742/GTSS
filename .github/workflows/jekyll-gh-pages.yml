@@ -19,7 +19,11 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
+<<<<<<< HEAD
           ruby-version: 'ruby 3.1.2p20'   # match the Ruby you use locally
+=======
+          ruby-version: '3.1.2p20'   # match the Ruby you use locally
+>>>>>>> 29cf419 (Update jekyll-gh-pages.yml)
           bundler-cache: true   # cache gems to speed up builds
 
       - name: Install dependencies
