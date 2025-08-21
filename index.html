@@ -1,0 +1,66 @@
+---
+layout: home
+---
+
+<!-- Features Section -->
+<section class="section">
+    <div class="container">
+        <h2>Why Choose GTSS?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔓</div>
+                <h3>Open to All - No Exceptions.</h3>
+                <p>GTSS is a free, open specification that unlocks new possibilities in traffic signal data sharing and innovation.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3>Configure Once, Deploy Anywhere</h3>
+                <p>Set it up once and use it seamlessly across any GTSS-compatable tool, platform and vendor without duplication or wasted effort.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Build on the Vibe</h3>
+                <p>A shared standard that fuels rapid development, enabling anyone to create, test and deploy new tools and services for traffic signals.</p>
+            </div>
+             <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Break Vendor Lock-In</h3>
+                <p>Free your data, cut configuration costs, and choose solutions that truly serve your community.</p>
+            </div>
+              <div class="feature-card">
+                <div class="feature-icon">🏦</div>
+                <h3>Reduce Costs</h3>
+                <p>Eliminate custom integration or vendor specific configuration.</p>
+            </div>
+             <div class="feature-card">
+                <div class="feature-icon">🔮</div>
+                <h3>Future Proof</h3>
+                <p>A shared standard that makes it easy to evolve, extend, and adopt new capabilities over time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Posts -->
+<section class="section latest-posts">
+    <div class="container">
+        <h2>Latest Updates</h2>
+        <div class="posts-grid">
+            {% for post in site.posts limit:3 %}
+                <article class="post-card">
+                    <div class="post-card-header">
+                        <span class="post-icon">{{ post.icon | default: "📄" }}</span>
+                    </div>
+                    <div class="post-card-content">
+                        <time class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
+                        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                        <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+        <div class="text-center">
+            <a href="{{ '/blog/' | relative_url }}" class="btn btn-primary">View All Posts</a>
+        </div>
+    </div>
+</section>

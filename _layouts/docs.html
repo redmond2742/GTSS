@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="page">
+        <header class="page-header">
+            <h1 class="page-title">{{ page.title }}</h1>
+            {% if page.description %}
+                <p class="page-description">{{ page.description }}</p>
+            {% endif %}
+        </header>
+
+        <div class="doc-layout" style="display: flex; gap: 2rem; align-items: flex-start;">
+            <aside class="doc-sidebar" 
+                style="border: 1px solid #ccc; 
+                       border-radius: 6px; 
+                       padding: 0.75rem 1rem; 
+                       background-color: #fff; 
+                       box-shadow: 0 1px 3px rgba(0,0,0,0.08); 
+                       width: max-content;">
+                <nav>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="{{ '/docs/' | relative_url }}">Overview</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="{{ '/docs/agency/' | relative_url }}">agency.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="{{ '/docs/signals/' | relative_url }}">signals.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="{{ '/docs/phases/' | relative_url }}">phases.txt</a></li>
+                        <li><a href="{{ '/docs/detectors/' | relative_url }}">detectors.txt</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="doc-content" 
+                style="flex: 1; 
+                       border: 1px solid #ccc; 
+                       border-radius: 6px; 
+                       padding: 1.5rem; 
+                       background-color: #fff; 
+                       box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+                <div class="doc-overview">
+                    {{ content }}
+                </div>
+            </main>
+        </div>
+    </div>
+</div>

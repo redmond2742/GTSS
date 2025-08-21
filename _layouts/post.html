@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="container">
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                {% if page.author %} • <span>{{ page.author }}</span>{% endif %}
+                {% if page.tags.size > 0 %}
+                    <div class="post-tags">
+                        {% for tag in page.tags %}
+                            <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </header>
+        
+        <div class="post-content">
+            {{ content }}
+        </div>
+        
+        <footer class="post-footer">
+            <div class="share-buttons">
+                <h4>Share this post:</h4>
+                <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </footer>
+    </article>
+    
+    <nav class="post-navigation">
+        {% if page.previous.url %}
+            <a href="{{ page.previous.url | relative_url }}" class="nav-previous">
+                <span>← Previous</span>
+                <strong>{{ page.previous.title }}</strong>
+            </a>
+        {% endif %}
+        {% if page.next.url %}
+            <a href="{{ page.next.url | relative_url }}" class="nav-next">
+                <span>Next →</span>
+                <strong>{{ page.next.title }}</strong>
+            </a>
+        {% endif %}
+    </nav>
+</div>

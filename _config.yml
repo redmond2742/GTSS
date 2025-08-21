@@ -1,0 +1,36 @@
+title: General Traffic Signal Specification
+description: Open standard, simple format, empowering traffic engineers
+url: "https://redmond2742.github.io"
+baseurl: "/GTSS"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Pagination
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# SEO
+author: GTSS Team
+twitter:
+  username: gtss_official

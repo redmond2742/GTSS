@@ -1,0 +1,25 @@
+<header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ '/' | relative_url }}" class="logo">
+                <span class="logo-icon">🚦</span>
+                GTSS
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+                    <li><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a></li>
+                    <li><a href="{{ '/docs/' | relative_url }}" {% if page.url contains '/docs' %}class="active"{% endif %}>Docs</a></li>
+                    <li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' or layout == 'post' %}class="active"{% endif %}>Blog</a></li>
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
