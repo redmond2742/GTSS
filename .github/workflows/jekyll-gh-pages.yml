@@ -19,7 +19,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'   # match the Ruby you use locally
+          ruby-version: 'ruby 3.1.2p20'   # match the Ruby you use locally
           bundler-cache: true   # cache gems to speed up builds
 
       - name: Install dependencies
