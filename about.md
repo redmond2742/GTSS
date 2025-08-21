@@ -2,6 +2,7 @@
 layout: page
 title: About GTSS
 description: Learn about the General Traffic Signal Specification and its mission to standardize traffic signal data with simple, open text files.
+permalink: /about/
 ---
 
 <div style="max-width: 900px; margin: auto; line-height: 1.7; font-size: 1.05rem;">
