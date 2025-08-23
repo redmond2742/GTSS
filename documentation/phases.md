@@ -2,7 +2,7 @@
 layout: docs
 title: Documentation
 description: Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).
-permalink: /phases/
+permalink: /documentation/phases/
 ---
 
 ## phases.txt
