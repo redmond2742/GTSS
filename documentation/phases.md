@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: documentation
 title: Documentation
 description: Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).
 permalink: /documentation/phases/
