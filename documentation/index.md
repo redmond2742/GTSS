@@ -15,7 +15,7 @@ Welcome to the comprehensive documentation for the General Traffic Signal Specif
 
 #### agency.txt
 
-agency.txt identifies the agnecy information associated with the traffic signals defined in the other GTSS files. Parameters include the agency ID, name, web address, timezone and email contact.
+agency.txt identifies the agency information associated with the traffic signals defined in the other GTSS files. Parameters include the agency ID, name, web address, timezone and email contact.
 <br>
 <br>
 
