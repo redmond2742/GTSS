@@ -16,7 +16,7 @@ Phase numbers, detector locations, speed limits, street names—these are the bu
 
 In developing traffic tools such as Safe Sightings of Signs and Signals (SSOSS) and Traffic Signal Kit, I’ve learned that they all rely on one constant: accurate intersection configuration data. And every single time, it became clear how challenging it is to gather, format, and share this information in a way that works across different systems. That’s why GTSS (General Traffic Signal Specification) was created.
 
-![Intersection Configuration in www.TrafficSignalKit.com]({{ "/assets/images/gtss-workflow.png" | relative_url }})
+![Intersection Configuration in www.TrafficSignalKit.com]({{ "/assets/images/TrafficSignalKit-ConfigurationScreen.png" | relative_url }})
 
 ## GTSS Basics
 
