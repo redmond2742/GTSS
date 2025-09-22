@@ -14,9 +14,9 @@ Aristotle believed that all knowledge begins with first principles—the most ba
 
 Phase numbers, detector locations, speed limits, street names—these are the building blocks of every tool, model, and decision we make in traffic engineering.
 
-In developing traffic tools such as [Safe Sightings of Signs and Signals (SSOSS)](https://github.com/redmond2742/SSOSS) and [Traffic Signal Kit](https://www.trafficsignalkit.com/), it's clear they all rely on one constant: accurate intersection configuration data. And every single time, it became clear how challenging it is to gather, format, and share this information in a way that works across different systems. That’s why [GTSS (General Traffic Signal Specification)](https://redmond2742.github.io/GTSS/) was created.
+In developing traffic tools such as [Safe Sightings of Signs and Signals (SSOSS)](https://github.com/redmond2742/SSOSS) and [Traffic Signal Kit](https://www.trafficsignalkit.com/), it becomes clear they all rely on one constant: accurate intersection configuration data. And every single time, it became clear how challenging it is to gather, format, and share this information in a way that works across different systems. That’s why [GTSS (General Traffic Signal Specification)](https://redmond2742.github.io/GTSS/) was created.
 
-![Intersection Configuration in www.TrafficSignalKit.com]({{ "/assets/images/TrafficSignalKit.com-ConfigurationInput.jpg" | relative_url }})
+![Intersection Configuration in www.TrafficSignalKit.com]({{ "/assets/images/TrafficSignalKit.com-ConfigurationInput.png" | relative_url }})
 
 ## GTSS Basics
 
