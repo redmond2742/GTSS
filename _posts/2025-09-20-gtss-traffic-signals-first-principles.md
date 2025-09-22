@@ -67,7 +67,7 @@ Imagine a navigation app that doesn’t just avoid congestion, but actually know
 - Integrate with navigation tools to reduce delays and emissions.
 - Help transit vehicles and freight optimize their routes in real time.
 
-This is more than just convenience—it’s acceleration. Instead of months of procurement, training, and setup, agencies could spin up decision-support tools in hours. Small cities without dedicated technical teams could benefit as much as large agencies. Private developers, traffic modelers, and researchers would be able to experiment and innovate faster, lowering barriers to entry and accelerating real progress.
+This is more than just convenience—it’s acceleration. Instead of months of procurement, training, and setup, agencies could spin up decision-support tools in hours. Small cities without dedicated technical teams could benefit as much as large agencies. Private developers, traffic modelers, and researchers would be able to experiment and innovate faster, lowering barriers for [exponential progress](https://pmc.ncbi.nlm.nih.gov/articles/PMC8386158/).
 
 ## Why It Matters
 
