@@ -73,4 +73,4 @@ This is more than just convenience—it’s acceleration. Instead of months of p
 
 This vision is all about making streets safer, more efficient, and more sustainable for everyone. Agencies save money by reducing redundant work and avoiding vendor lock-in. Planners and researchers gain insights that were once buried in proprietary, inaccessible systems. The public benefits from smoother travel, safer crossings, and smarter apps.
 
-Just as GTFS became the foundation for an entire ecosystem of transit tools, GTSS can become the foundation for the next generation of traffic signal innovation.
+Just as [GTFS became the foundation for an entire ecosystem of transit tools](https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html), GTSS can become the foundation for the next generation of traffic signal innovation.
