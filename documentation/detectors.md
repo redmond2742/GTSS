@@ -67,6 +67,8 @@ technology_type specifies the type of detection technology used, such as "induct
 
 mode indicates the operational mode of the detection channel, such as "pulse", or "Presence".
 
+<br>
+
 #### length
 
 length defines the length of the detection area in feet, measured between the start and end of the detector in the path of travel.

@@ -35,7 +35,7 @@ agency_url is the web address to learn more about the agency.
 
 #### agency_timezone
 
-agency_timezone is the timezone in which the agency operates, formatted as per IANA Time Zone Database (e.g., "America/New_York").
+agency_timezone is the timezone in which the agency operates, formatted as per <a href = "https://timeapi.io/documentation/iana-timezones">IANA Time Zone Database</a> (e.g., "America/New_York").
 
 <br>
 
