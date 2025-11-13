@@ -1,0 +1,170 @@
+---
+layout: page
+title: GTSS Builder
+description: Build and manage traffic signal specifications with ease—right in your browser
+---
+
+<div style="text-align: center; padding: 3rem 0 2rem;">
+
+  <a href="http://app.gtss.dev" style="display: inline-block; background: #2563eb; color: white; padding: 0.875rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 1.125rem; transition: background 0.2s;">
+    Get Started Free →
+  </a>
+</div>
+
+---
+
+## Why GTSS Builder?
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0;">
+  <div style="padding: 1.5rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;">
+    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚦</div>
+    <h3 style="margin-bottom: 0.5rem;">Complete Signal Config</h3>
+    <p style="color: #4a5568;">Define signals, phases, detectors, and movements in one place with intuitive controls.</p>
+  </div>
+  
+  <div style="padding: 1.5rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;">
+    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔒</div>
+    <h3 style="margin-bottom: 0.5rem;">100% Private</h3>
+    <p style="color: #4a5568;">All data stays in your browser. No servers, no uploads, complete privacy.</p>
+  </div>
+  
+  <div style="padding: 1.5rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;">
+    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📤</div>
+    <h3 style="margin-bottom: 0.5rem;">Standard Export</h3>
+    <p style="color: #4a5568;">Export to GTSS format—ready for any compatible traffic management system.</p>
+  </div>
+  
+  <div style="padding: 1.5rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;">
+    <div style="font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
+    <h3 style="margin-bottom: 0.5rem;">Free Forever</h3>
+    <p style="color: #4a5568;">No subscriptions, no limits. Build as many signal configurations as you need.</p>
+  </div>
+</div>
+
+---
+
+## How It Works
+
+<div style="margin: 3rem 0;">
+  <div style="display: flex; flex-direction: column; gap: 2rem;">
+    
+  <div style="display: grid; grid-template-columns: 60px 1fr; gap: 1.5rem; align-items: start;">
+    <div style="background: #3b82f6; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">1</div>
+    <div>
+      <h3 style="margin: 0 0 0.5rem;">Add Your Signals</h3>
+      <p style="color: #4a5568; margin: 0;">Create signal entries with IDs, locations, and approach details. Map coordinates or enter manually.</p>
+  
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 60px 1fr; gap: 1.5rem; align-items: start;">
+    <div style="background: #8b5cf6; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">2</div>
+    <div>
+      <h3 style="margin: 0 0 0.5rem;">Configure Phases & Detectors</h3>
+      <p style="color: #4a5568; margin: 0;">Define traffic movements, assign lanes, and link detector channels to each phase.</p>
+   
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 60px 1fr; gap: 1.5rem; align-items: start;">
+    <div style="background: #10b981; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">3</div>
+    <div>
+      <h3 style="margin: 0 0 0.5rem;">Export & Deploy</h3>
+      <p style="color: #4a5568; margin: 0;">Generate standard GTSS text files ready for use in your traffic management systems.</p>
+
+    </div>
+
+  </div>
+
+  </div>
+</div>
+
+---
+
+## Key Features
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0;">
+  
+  <div style="padding: 1.5rem; background: #f7fafc; border-left: 4px solid #3b82f6; border-radius: 0.5rem;">
+    <h3 style="color: #3b82f6; margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+      <span style="font-size: 1.5rem;">📍</span>
+      Signal Management
+    </h3>
+    <p style="color: #4a5568; margin: 0; line-height: 1.6;">
+      Create and organize multiple traffic signals with location data, approach names, and custom IDs for easy tracking.
+    </p>
+  </div>
+
+  <div style="padding: 1.5rem; background: #f7fafc; border-left: 4px solid #8b5cf6; border-radius: 0.5rem;">
+    <h3 style="color: #8b5cf6; margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+      <span style="font-size: 1.5rem;">⚙️</span>
+      Phase Configuration
+    </h3>
+    <p style="color: #4a5568; margin: 0; line-height: 1.6;">
+      Define movement types (through, left-turn, right-turn), lane counts, and approach bearings to match your controller setup.
+    </p>
+  </div>
+
+  <div style="padding: 1.5rem; background: #f7fafc; border-left: 4px solid #10b981; border-radius: 0.5rem;">
+    <h3 style="color: #10b981; margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+      <span style="font-size: 1.5rem;">🎯</span>
+      Detector Integration
+    </h3>
+    <p style="color: #4a5568; margin: 0; line-height: 1.6;">
+      Map physical detection channels to phases with precise positioning and detection object types (vehicle, pedestrian, bicycle).
+    </p>
+  </div>
+
+  <div style="padding: 1.5rem; background: #f7fafc; border-left: 4px solid #f59e0b; border-radius: 0.5rem;">
+    <h3 style="color: #f59e0b; margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+      <span style="font-size: 1.5rem;">📥</span>
+      Import Existing Data
+    </h3>
+    <p style="color: #4a5568; margin: 0; line-height: 1.6;">
+      Upload your current GTSS files to edit and refine configurations without starting from scratch.
+    </p>
+  </div>
+
+  <div style="padding: 1.5rem; background: #f7fafc; border-left: 4px solid #ef4444; border-radius: 0.5rem;">
+    <h3 style="color: #ef4444; margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+      <span style="font-size: 1.5rem;">✓</span>
+      Standards Compliant
+    </h3>
+    <p style="color: #4a5568; margin: 0; line-height: 1.6;">
+      Exports generate the four standard GTSS files (agency.txt, signals.txt, phases.txt, detectors.txt) in proper format.
+    </p>
+  </div>
+
+    <div style="padding: 1.5rem; background: #f7fafc; border-left: 4px solid #ef4444; border-radius: 0.5rem;">
+    <h3 style="color: #51d2f2ff; margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+      <span style="font-size: 1.5rem;">✓</span>
+      Rapid Configuration
+    </h3>
+    <p style="color: #4a5568; margin: 0; line-height: 1.6;">
+      Easily add multiple signals for streamlined configuration.
+    </p>
+
+  </div>
+
+</div>
+
+---
+
+<div id="get-started" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 2rem; border-radius: 0.75rem; text-align: center; margin: 3rem 0;">
+  <h2 style="color: white; margin-bottom: 1rem; font-size: 2rem;">Ready to Get Started?</h2>
+  <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95;">
+    No signup required. Start building traffic signal configurations in seconds.
+  </p>
+  <a href="http://app.gtss.dev" style="display: inline-block; background: white; color: #667eea; padding: 0.875rem 2.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; font-size: 1.125rem; transition: transform 0.2s;">
+    Launch GTSS Builder
+  </a>
+  <div style="margin-top: 1.5rem; font-size: 0.875rem; opacity: 0.9;">
+    ✓ Free forever  ✓ No installation  ✓ Works offline
+  </div>
+</div>
+
+---
+
+<div style="text-align: center; color: #718096; font-size: 0.875rem; padding: 2rem 0;">
+  Open source and free to use. Check the repository for license details.
+</div>
