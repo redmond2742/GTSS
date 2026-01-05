@@ -159,7 +159,7 @@ description: Build and manage traffic signal specifications with ease—right in
     Launch GTSS Builder
   </a>
   <div style="margin-top: 1.5rem; font-size: 0.875rem; opacity: 0.9;">
-    ✓ Free forever  ✓ No installation  ✓ Works offline
+    ✓ Free forever  ✓ No installation  ✓ Local Storage
   </div>
 </div>
 

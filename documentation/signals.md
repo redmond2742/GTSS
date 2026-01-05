@@ -27,17 +27,7 @@ agency_id is a self-assigned unique identifier that distinctly identifies each a
 
 <br>
 
-#### street_name1
 
-street_name1 is the name of the street for the first direction of the intersection. It is used to identify the primary approach to the signal.
-
-<br>
-
-#### street_name2
-
-street_name2 is the name of the street for the second direction of the intersection. It is used to identify the secondary approach to the signal.
-
-<br>
 
 #### latitude
 
@@ -58,6 +48,6 @@ longitude is the geographic longitude of the center of the intersection, formatt
 ### Example
 
 ```csv
-signal_id,agency_id,street_name1,street_name2,latitude,longitude
-1,1,Main St,Second St,40.712776,-74.005974
+signal_id,agency_id,latitude,longitude
+1,1,40.712776,-74.005974
 ```

@@ -7,7 +7,7 @@ permalink: /documentation/phases/
 
 ## phases.txt
 
-phases.txt defines phases and the lane and movement type through the intersection, number of lanes, compass bearing of the approach and the posted speed limit.
+phases.txt defines phases and the lane and movement type through the intersection, number of lanes, and links to an approach ID as defined in approaches.txt.
 
 <br>
 <br>
@@ -21,9 +21,15 @@ phase is a unique identifier for each phase of a traffic signal. It is used to r
 
 <br>
 
+#### approach_id
+
+approach_id is a id number associated with a specific approach for each traffic signal. It is defined in approaches.txt.
+
+<br>
+
 #### signal_id
 
-signal_id is a unique agency specific identifier for each traffic signal. It is used to reference the signal in other GTSS files.
+signal_id is a unique agency specific identifier for each traffic signal. It is used to reference the traffic signal in other GTSS files.
 
 <br>
 
@@ -97,15 +103,10 @@ num_of_lanes indicates the number of lanes available at the stop bar for the mov
 
 <br>
 
-#### compass_bearing
+#### ped_phase_enabled
 
-compass_bearing indicates the compass bearing of the approach to the intersection, expressed in degrees (0-360).
 
-<br>
-
-#### posted_speed
-
-posted_speed indicates the posted speed limit for the approach to the intersection, expressed in miles per hour (mph).
+ped_phase_enabled is a boolean value indicating wheather the defined phase includes a pedestrian phase.
 
 <br>
 
@@ -122,6 +123,6 @@ is_overlap is a boolean value indicating whether the phase overlaps with another
 ### Example
 
 ```csv
-phase,signal_id,movement_type,num_of_lanes,compass_bearing,posted_speed,is_overlap
-1,1,L,2,90,35,false
+phase,approach_id,signal_id,movement_type,num_of_lanes,ped_phase_enabled,is_overlap
+1,1,L,2,true,false
 ```
