@@ -75,6 +75,7 @@ Each row describes a single phase basic timing parameters. These include:
 * Pedestrian Clearance Interval  
 * Leading Pedestrian Interval  
 * Vehicle Recall Type
+* Pedestrian Recall
 
 ### basic\_timing.txt format
 

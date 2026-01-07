@@ -134,6 +134,6 @@ veh_recall_type defines whether a phase is placed in recall to serve vehicles wi
 ### Example
 
 ```csv
-phase,signal_id,ped_walk,ped_clearance,leading_ped_interval,min_green,max_green,yellow,all-red,veh_recall_type
-1,1,7,25,3,8,40,4,2,Min
+phase,signal_id,ped_walk,ped_clearance,leading_ped_interval,min_green,max_green,yellow,all-red,veh_recall_type,ped_recall
+1,1,7,25,3,8,40,4,2,Min,true
 ```

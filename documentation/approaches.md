@@ -53,6 +53,6 @@ posted_speed indicates the posted speed limit for the approach to the intersecti
 ### Example
 
 ```csv
-approach_id,signal_id,street_name,compass_bearing, posted_speed
+approach_id,signal_id,street_name,compass_bearing,posted_speed
 1,1,main street,90,35
 ```
