@@ -131,6 +131,12 @@ veh_recall_type defines whether a phase is placed in recall to serve vehicles wi
 
 <br>
 
+#### ped_recall
+
+ped_recall is a boolean value indicating wheather the pedestrian phase is placed on recall to automatically serve the pedestrian phase every call.
+
+<br>
+
 ### Example
 
 ```csv
