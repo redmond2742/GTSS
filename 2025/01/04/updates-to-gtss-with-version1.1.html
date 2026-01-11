@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTSS Version 1.1 - Flexible Foundation for Every Intersection | GTSS – General Traffic Signal Specification | Open Standard + Simple Format</title>
+    <meta name="description" content="New approaches.txt and basic_timings.txt to add flexibility and improved pedestrian safety functionality.">
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>GTSS Version 1.1 - Flexible Foundation for Every Intersection | GTSS – General Traffic Signal Specification Open Standard + Simple Format</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="GTSS Version 1.1 - Flexible Foundation for Every Intersection" />
+<meta name="author" content="GTSS Team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="New approaches.txt and basic_timings.txt to add flexibility and improved pedestrian safety functionality." />
+<meta property="og:description" content="New approaches.txt and basic_timings.txt to add flexibility and improved pedestrian safety functionality." />
+<link rel="canonical" href="https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html" />
+<meta property="og:url" content="https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html" />
+<meta property="og:site_name" content="GTSS – General Traffic Signal Specification Open Standard + Simple Format" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-04T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="GTSS Version 1.1 - Flexible Foundation for Every Intersection" />
+<meta name="twitter:site" content="@gtss_official" />
+<meta name="twitter:creator" content="@GTSS Team" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"GTSS Team"},"dateModified":"2025-01-04T00:00:00+00:00","datePublished":"2025-01-04T00:00:00+00:00","description":"New approaches.txt and basic_timings.txt to add flexibility and improved pedestrian safety functionality.","headline":"GTSS Version 1.1 - Flexible Foundation for Every Intersection","mainEntityOfPage":{"@type":"WebPage","@id":"https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html"},"url":"https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/GTSS/assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/GTSS/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/GTSS/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+    <header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/GTSS/" class="logo">
+                <span class="logo-icon">🚦</span>
+                GTSS
+            </a>
+            
+    
+    
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="/GTSS/" >Home</a></li>
+                    <li><a href="/GTSS/app/" >App</a></li>
+                    <li><a href="/GTSS/documentation/" >Docs</a></li>
+                    <li><a href="/GTSS/blog/" >Blog</a></li>
+                    <li><a href="/GTSS/about/" >About</a></li>
+                    
+
+                   
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+    
+    <main>
+        <div class="container">
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">GTSS Version 1.1 - Flexible Foundation for Every Intersection</h1>
+            <div class="post-meta">
+                <time datetime="2025-01-04T00:00:00+00:00">January 04, 2025</time>
+                 • <span>GTSS Team</span>
+                
+                    <div class="post-tags">
+                        
+                            <span class="tag">release</span>
+                        
+                    </div>
+                
+            </div>
+        </header>
+        
+        <div class="post-content">
+            <p>The <a href="https://redmond2742.github.io/GTSS/">General Traffic Signal Specification (GTSS)</a> was created with a simple goal:</p>
+
+<blockquote>
+  <p>make intersection configuration easier and more consistent to rapidly prototype new software tools.</p>
+</blockquote>
+
+<p>As GTSS was peer reviewed and used by practitioners, it became clear that scaling it across many agencies and intersection types requires some modifications for greater flexibility.</p>
+
+<p><strong>GTSS v1.1 is the first step in that direction.</strong></p>
+
+<p>This release introduces two important additions:</p>
+
+<ul>
+  <li>
+    <p><a href="https://redmond2742.github.io/GTSS/documentation/approaches/">approaches.txt</a></p>
+  </li>
+  <li>
+    <p><a href="https://redmond2742.github.io/GTSS/documentation/basic_timings/">basic_timings.txt</a></p>
+  </li>
+</ul>
+
+<p>Together, they make GTSS more expressive, more general, and better aligned with how traffic engineers actually think about intersections.</p>
+
+<hr />
+
+<h2 id="introducing-approachestxt"><strong>Introducing approaches.txt</strong></h2>
+
+<p>In GTSS v1.1, intersection street approaches are now explicitly defined in a dedicated file: approaches.txt</p>
+
+<p>Instead of assigning street names and speed limits directly to phases, GTSS now assigns them to approaches, which better reflects the physical world.</p>
+
+<p>This unlocks several key improvements:</p>
+
+<ul>
+  <li>
+    <p>An intersection can have multiple approaches with different street names</p>
+  </li>
+  <li>
+    <p>Street names, street compass bearings and posted speeds are defined once, consistently</p>
+  </li>
+  <li>
+    <p>Multiple phases can be assigned detailed approach information</p>
+  </li>
+</ul>
+
+<h3 id="the-approachestxt-format">The approaches.txt Format</h3>
+
+<p>Each row in approaches.txt describes a physical approach to the intersection. Fields include:</p>
+
+<ul>
+  <li>Approach ID</li>
+  <li>Signal ID</li>
+  <li>Street name</li>
+  <li>Compass bearing</li>
+  <li>Posted speed limit</li>
+</ul>
+
+<h4 id="approachestxt-format">Approaches.txt format</h4>
+
+<blockquote>
+  <p>approach_id, signal_id, street_name, compass_bearing, posted_speed</p>
+</blockquote>
+
+<p>Where, approach_id is now linked in phases.txt.</p>
+
+<hr />
+
+<h2 id="introducing-basic_timingstxt"><strong>Introducing basic_timings.txt</strong></h2>
+
+<p>GTSS v1.1 also introduces a new optional file, basic_timings.txt. This file adds essential timing parameters without turning GTSS into a full timing specification. Its goal is not to replace detailed timing sheets, but to enable safety checks, support analytics, allow real-time estimation, and open the door to pedestrian-focused tools.</p>
+
+<h3 id="the-basic_timingstxt-file">The basic_timings.txt File</h3>
+
+<p>Each row describes a single phase basic timing parameters. These include:</p>
+
+<ul>
+  <li>Phase</li>
+  <li>Signal_ID</li>
+  <li>Minimum Green</li>
+  <li>Maximum Green</li>
+  <li>Yellow Change Interval</li>
+  <li>All Clearance Interval</li>
+  <li>Pedestrian Walk Interval</li>
+  <li>Pedestrian Clearance Interval</li>
+  <li>Leading Pedestrian Interval</li>
+  <li>Vehicle Recall Type</li>
+  <li>Pedestrian Recall</li>
+</ul>
+
+<h4 id="basic_timingtxt-format">basic_timing.txt format</h4>
+
+<blockquote>
+  <p>phase, signal_id, ped_walk, ped_clearance, lpi, min_green, max_green, yellow, all_red, veh_recall_type</p>
+</blockquote>
+
+<p>With basic_timings.txt, GTSS can now support simplified pedestrian safety audits, <a href="https://onlinepubs.trb.org/onlinepubs/nchrp/docs/NCHRP03-95_FR.pdf">red and yellow clearance analysis</a>, timing sanity checks, and timing simulations. Including <a href="https://highways.dot.gov/safety/proven-safety-countermeasures/leading-pedestrian-interval">Leading Pedestrian Intervals</a> is intentional, as pedestrian safety is increasingly central to signal operations.</p>
+
+<hr />
+
+<h2 id="the-benefits-of-gtss-v11"><strong>The Benefits of GTSS v1.1</strong></h2>
+
+<p>Early versions of GTSS leaned heavily on phases as the primary organizing structure. While effective, this approach showed limitations when applied to Multi-phase approaches and complex street naming conventions.</p>
+
+<p>GTSS v1.1 shifts the focus slightly from phases alone to approaches as first-class objects, while preserving compatibility with phase-based control logic. Adding basic timing values further expands GTSS into a more capable and <a href="https://en.wikipedia.org/wiki/Vision_Zero">pedestrian safety-focused</a> specification.</p>
+
+        </div>
+        
+        <footer class="post-footer">
+            <div class="share-buttons">
+                <h4>Share this post:</h4>
+                <a href="https://twitter.com/intent/tweet?text=GTSS%20Version%201.1%20-%20Flexible%20Foundation%20for%20Every%20Intersection&url=https://redmond2742.github.io/2025/01/04/updates-to-gtss-with-version1.1.html" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://redmond2742.github.io/2025/01/04/updates-to-gtss-with-version1.1.html" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </footer>
+    </article>
+    
+    <nav class="post-navigation">
+        
+        
+            <a href="/GTSS/2025/08/16/introduction-to-GTSS.html" class="nav-next">
+                <span>Next →</span>
+                <strong>Introducing a General Traffic Signal Specification (GTSS)</strong>
+            </a>
+        
+    </nav>
+</div>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GTSS – General Traffic Signal Specification | Open Standard + Simple Format</h3>
+                <p>The General Traffic Signal Specification (GTSS) is an open standard for signal phasing, detector configuration, and traffic control. Define once, deploy anywhere—across any GTSS-compatible tool, platform, or vendor.</p>
+            </div>
+            <div class="footer-section">
+                <h4>References</h4>
+                <ul>
+                    <li><a href="/GTSS/about/">About</a></li>
+                    <li><a href="/GTSS/documentation/">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="/GTSS/app/">App</a></li>
+                    <li><a href="/GTSS/blog/">Blog</a></li>
+                    <li><a href="https://github.com/redmond2742/GTSS" target="_blank">GitHub</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           
+</p>
+            <p>&copy; 2026 GTSS Team. Released into the public domain under 
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color:#4FC3F7;">
+    CC0 1.0 Universal (CC0) Public Domain Dedication
+  </a>.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/GTSS/assets/js/main.js"></script>
+</body>
+</html>

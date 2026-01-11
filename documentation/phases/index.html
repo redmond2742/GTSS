@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | GTSS – General Traffic Signal Specification | Open Standard + Simple Format</title>
+    <meta name="description" content="Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).">
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Documentation | GTSS – General Traffic Signal Specification Open Standard + Simple Format</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Documentation" />
+<meta name="author" content="GTSS Team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Complete guide to implementing and working with the General Traffic Signal Specification (GTSS)." />
+<meta property="og:description" content="Complete guide to implementing and working with the General Traffic Signal Specification (GTSS)." />
+<link rel="canonical" href="https://redmond2742.github.io/GTSS/documentation/phases/" />
+<meta property="og:url" content="https://redmond2742.github.io/GTSS/documentation/phases/" />
+<meta property="og:site_name" content="GTSS – General Traffic Signal Specification Open Standard + Simple Format" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Documentation" />
+<meta name="twitter:site" content="@gtss_official" />
+<meta name="twitter:creator" content="@GTSS Team" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"GTSS Team"},"description":"Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).","headline":"Documentation","url":"https://redmond2742.github.io/GTSS/documentation/phases/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/GTSS/assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/GTSS/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/GTSS/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+    <header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/GTSS/" class="logo">
+                <span class="logo-icon">🚦</span>
+                GTSS
+            </a>
+            
+    
+    
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="/GTSS/" >Home</a></li>
+                    <li><a href="/GTSS/app/" >App</a></li>
+                    <li><a href="/GTSS/documentation/" >Docs</a></li>
+                    <li><a href="/GTSS/blog/" >Blog</a></li>
+                    <li><a href="/GTSS/about/" >About</a></li>
+                    
+
+                   
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+    
+    <main>
+        <div class="container">
+    <div class="page">
+        <header class="page-header">
+            <h1 class="page-title">Documentation</h1>
+            
+                <p class="page-description">Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).</p>
+            
+        </header>
+
+        <div class="doc-layout" style="display: flex; gap: 2rem; align-items: flex-start;">
+            <aside class="doc-sidebar" 
+                style="border: 1px solid #ccc; 
+                       border-radius: 6px; 
+                       padding: 0.75rem 1rem; 
+                       background-color: #fff; 
+                       box-shadow: 0 1px 3px rgba(0,0,0,0.08); 
+                       width: max-content;">
+                <nav>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/">Overview</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/agency/">agency.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/signals/">signals.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/approaches/">approaches.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/phases/">phases.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/basic_timings/">basic_timings.txt</a></li>
+                        <li><a href="/GTSS/documentation/detectors/">detectors.txt</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="doc-content" 
+                style="flex: 1; 
+                       border: 1px solid #ccc; 
+                       border-radius: 6px; 
+                       padding: 1.5rem; 
+                       background-color: #fff; 
+                       box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+                <div class="doc-overview">
+                    <h2 id="phasestxt">phases.txt</h2>
+
+<p>phases.txt defines phases and the lane and movement type through the intersection, number of lanes, and links to an approach ID as defined in approaches.txt.</p>
+
+<p><br />
+<br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h4 id="phase">phase</h4>
+
+<p>phase is a unique identifier for each phase of a traffic signal. It is used to reference the phase in other GTSS files.</p>
+
+<p><br /></p>
+
+<h4 id="approach_id">approach_id</h4>
+
+<p>approach_id is a id number associated with a specific approach for each traffic signal. It is defined in approaches.txt.</p>
+
+<p><br /></p>
+
+<h4 id="signal_id">signal_id</h4>
+
+<p>signal_id is a unique agency specific identifier for each traffic signal. It is used to reference the traffic signal in other GTSS files.</p>
+
+<p><br /></p>
+
+<h4 id="movement_type">movement_type</h4>
+
+<p>movement_type describes the type of movement allowed during the phase, such as “L” for Left Turn, “T” for through. Additional Encodings shown in table below.</p>
+
+<style>
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  thead {
+    background: #2c3e50;
+    color: #fff;
+    text-align: left;
+  }
+
+  th, td {
+    padding: 12px 16px;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+
+  tbody tr:hover {
+    background: #eaf2f8;
+  }
+
+  th:first-child, td:first-child {
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+  }
+</style>
+
+<center>
+<table>
+  <thead>
+    <tr>
+      <th>Encoding</th>
+      <th>Phase Movement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>T</td><td>Through</td></tr>
+    <tr><td>L</td><td>Left</td></tr>
+    <tr><td>LT</td><td>Left Through Shared Lane</td></tr>
+    <tr><td>TL</td><td>Permissive Left</td></tr>
+    <tr><td>FYA</td><td>Flashing Yellow Arrow</td></tr>
+    <tr><td>U</td><td>U-Turn</td></tr>
+    <tr><td>R</td><td>Right Turn</td></tr>
+    <tr><td>TR</td><td>Through Right</td></tr>
+    <tr><td>PED</td><td>Pedestrian</td></tr>
+  </tbody>
+</table>
+</center>
+
+<p><br /></p>
+
+<h4 id="num_of_lanes">num_of_lanes</h4>
+
+<p>num_of_lanes indicates the number of lanes available at the stop bar for the movement during the phase.</p>
+
+<p><br /></p>
+
+<h4 id="ped_phase_enabled">ped_phase_enabled</h4>
+
+<p>ped_phase_enabled is a boolean value indicating wheather the defined phase includes a pedestrian phase.</p>
+
+<p><br /></p>
+
+<h4 id="is_overlap">is_overlap</h4>
+
+<p>is_overlap is a boolean value indicating whether the phase overlaps with another phase. It is used to manage simultaneous movements at the intersection.</p>
+
+<p><br />
+<br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h3 id="example">Example</h3>
+
+<pre><code class="language-csv">phase,approach_id,signal_id,movement_type,num_of_lanes,ped_phase_enabled,is_overlap
+1,1,L,2,true,false
+</code></pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GTSS – General Traffic Signal Specification | Open Standard + Simple Format</h3>
+                <p>The General Traffic Signal Specification (GTSS) is an open standard for signal phasing, detector configuration, and traffic control. Define once, deploy anywhere—across any GTSS-compatible tool, platform, or vendor.</p>
+            </div>
+            <div class="footer-section">
+                <h4>References</h4>
+                <ul>
+                    <li><a href="/GTSS/about/">About</a></li>
+                    <li><a href="/GTSS/documentation/">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="/GTSS/app/">App</a></li>
+                    <li><a href="/GTSS/blog/">Blog</a></li>
+                    <li><a href="https://github.com/redmond2742/GTSS" target="_blank">GitHub</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           
+</p>
+            <p>&copy; 2026 GTSS Team. Released into the public domain under 
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color:#4FC3F7;">
+    CC0 1.0 Universal (CC0) Public Domain Dedication
+  </a>.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/GTSS/assets/js/main.js"></script>
+</body>
+</html>
