@@ -7,9 +7,9 @@ tags: ["release"]
 description: "New approaches.txt and basic_timings.txt to add flexibility and improved pedestrian safety functionality."
 ---
 
+The [General Traffic Signal Specification (GTSS)](https://redmond2742.github.io/GTSS/) was created with a simple goal:
 
-The General Traffic Signal Specification (GTSS) was created with a simple goal:  
- > make intersection configuration easier and more consistent to rapidly prototype new software tools.
+> make intersection configuration easier and more consistent to rapidly prototype new software tools.
 
 As GTSS was peer reviewed and used by practitioners, it became clear that scaling it across many agencies and intersection types requires some modifications for greater flexibility.
 
@@ -17,9 +17,9 @@ As GTSS was peer reviewed and used by practitioners, it became clear that scalin
 
 This release introduces two important additions:
 
-* approaches.txt
+- [approaches.txt](https://redmond2742.github.io/GTSS/documentation/approaches/)
 
-* basic\_timings.txt
+- [basic_timings.txt](https://redmond2742.github.io/GTSS/documentation/basic_timings/)
 
 Together, they make GTSS more expressive, more general, and better aligned with how traffic engineers actually think about intersections.
 
@@ -27,67 +27,66 @@ Together, they make GTSS more expressive, more general, and better aligned with 
 
 ## **Introducing approaches.txt**
 
-In GTSS v1.1, approaches are now explicitly defined in a dedicated file: approaches.txt
+In GTSS v1.1, intersection street approaches are now explicitly defined in a dedicated file: approaches.txt
 
 Instead of assigning street names and speed limits directly to phases, GTSS now assigns them to approaches, which better reflects the physical world.
 
 This unlocks several key improvements:
 
-* An intersection can have multiple approaches with different street names
+- An intersection can have multiple approaches with different street names
 
-* Street names, street compass bearings and posted speeds are defined once, consistently
+- Street names, street compass bearings and posted speeds are defined once, consistently
 
-* Detailed approach information can be assigned to multiple phases
+- Multiple phases can be assigned detailed approach information
 
-## The approaches.txt File
+### The approaches.txt Format
 
 Each row in approaches.txt describes a physical approach to the intersection. Fields include:
 
-* Approach ID  
-* Signal ID  
-* Street name  
-* Compass bearing  
-* Posted speed limit
+- Approach ID
+- Signal ID
+- Street name
+- Compass bearing
+- Posted speed limit
 
-### Approaches.txt format
+#### Approaches.txt format
 
-> approach\_id, signal\_id, street\_name, compass\_bearing, posted\_speed
+> approach_id, signal_id, street_name, compass_bearing, posted_speed
 
-Where, approach\_id is now linked in phases.txt along with signal\_id.
+Where, approach_id is now linked in phases.txt.
 
 ---
 
-## **Introducing basic\_timings.txt**
+## **Introducing basic_timings.txt**
 
-GTSS v1.1 also introduces a new optional file, basic\_timings.txt. This file adds essential timing parameters without turning GTSS into a full timing specification. Its goal is not to replace detailed timing sheets, but to enable safety checks, support analytics, allow real-time estimation, and open the door to pedestrian-focused tools.
+GTSS v1.1 also introduces a new optional file, basic_timings.txt. This file adds essential timing parameters without turning GTSS into a full timing specification. Its goal is not to replace detailed timing sheets, but to enable safety checks, support analytics, allow real-time estimation, and open the door to pedestrian-focused tools.
 
-## The basic\_timings.txt File
+### The basic_timings.txt File
 
 Each row describes a single phase basic timing parameters. These include:
 
-* Phase  
-* Signal\_ID  
-* Minimum Green  
-* Maximum Green  
-* Yellow Change Interval  
-* All Clearance Interval  
-* Pedestrian Walk Interval   
-* Pedestrian Clearance Interval  
-* Leading Pedestrian Interval  
-* Vehicle Recall Type
-* Pedestrian Recall
+- Phase
+- Signal_ID
+- Minimum Green
+- Maximum Green
+- Yellow Change Interval
+- All Clearance Interval
+- Pedestrian Walk Interval
+- Pedestrian Clearance Interval
+- Leading Pedestrian Interval
+- Vehicle Recall Type
+- Pedestrian Recall
 
-### basic\_timing.txt format
+#### basic_timing.txt format
 
-> phase, signal\_id, ped_walk, ped_clearance, lpi, min_green, max_green, yellow, all_red, veh_recall_type
+> phase, signal_id, ped_walk, ped_clearance, lpi, min_green, max_green, yellow, all_red, veh_recall_type
 
-With basic\_timings.txt, GTSS can now support simplified pedestrian safety audits, red and yellow clearance analysis, timing sanity checks, and timing simulations. Including Leading Pedestrian Intervals is intentional, as pedestrian safety is increasingly central to signal operations.
+With basic_timings.txt, GTSS can now support simplified pedestrian safety audits, [red and yellow clearance analysis](https://onlinepubs.trb.org/onlinepubs/nchrp/docs/NCHRP03-95_FR.pdf), timing sanity checks, and timing simulations. Including [Leading Pedestrian Intervals](https://highways.dot.gov/safety/proven-safety-countermeasures/leading-pedestrian-interval) is intentional, as pedestrian safety is increasingly central to signal operations.
 
 ---
 
-## **Summary of GTSS v1.1**
+## **The Benefits of GTSS v1.1**
 
 Early versions of GTSS leaned heavily on phases as the primary organizing structure. While effective, this approach showed limitations when applied to Multi-phase approaches and complex street naming conventions.
 
-GTSS v1.1 shifts the focus slightly from phases alone to approaches as first-class objects, while preserving compatibility with phase-based control logic. Adding basic timing values further expands GTSS into a more capable and pedestrian safety-focused specification.
-
+GTSS v1.1 shifts the focus slightly from phases alone to approaches as first-class objects, while preserving compatibility with phase-based control logic. Adding basic timing values further expands GTSS into a more capable and [pedestrian safety-focused](https://en.wikipedia.org/wiki/Vision_Zero) specification.

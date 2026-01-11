@@ -6,7 +6,7 @@ permalink: /about/
 ---
 
 <div style="max-width: 900px; margin: auto; line-height: 1.7; font-size: 1.05rem;">
-The General Traffic Signal Specification (GTSS) provides a simple, open, and universal framework for traffic signal data, configuration and location. By defining a minimal set of four CSV files, GTSS makes it easy for cities, vendors, and developers to share, analyze, and develop signal systems reliably and consistently.
+The General Traffic Signal Specification (GTSS) provides a simple, open, and universal framework for traffic signal data, configuration and location. By defining a minimal set of CSV files, GTSS makes it easy for cities, vendors, and developers to share, analyze, and develop signal systems reliably and consistently.
 
 <h2 style="text-align: center; margin-top: 2rem;">Mission</h2>
 
