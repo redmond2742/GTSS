@@ -23,6 +23,8 @@ The initial v1.0 of GTSS is intentionally simple. Only four text files are requi
 - **phases.txt** — defines phases and the lane and movement type through the intersection, number of lanes, compass bearing of the approach and the posted speed limit.
 - **detectors.txt** — defines channels associated with phases for a specific signal, where these detection areas are in relation to stop bar and size, and expected objects are detected.
 
+> **UPDATE** GTSS V1.1 updates this to 2 additional files for approaches and basic timing. [Read more about the Version 1.1 update.](https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html)
+
 With just these four files, the potential for rapid implementation and the development of entirely new tools becomes possible. What once required complex systems can now be built with simple, accessible data. Some of the improvements this enables include:
 
 - [Automated Traffic Signal Performance Measures](https://ops.fhwa.dot.gov/publications/fhwahop20002/ch2.htm) ([ATSPM](https://traffic.dot.ga.gov/ATSPM)) — GTSS provides standardized intersection configuration, making ATSPM setup faster, more accurate, and easier to maintain.
