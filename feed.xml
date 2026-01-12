@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://redmond2742.github.io/GTSS/feed.xml" rel="self" type="application/atom+xml" /><link href="https://redmond2742.github.io/GTSS/" rel="alternate" type="text/html" /><updated>2026-01-12T04:36:34+00:00</updated><id>https://redmond2742.github.io/GTSS/feed.xml</id><title type="html">GTSS – General Traffic Signal Specification | Open Standard + Simple Format</title><subtitle>The General Traffic Signal Specification (GTSS) is an open standard for signal phasing, detector configuration, and traffic control. Define once, deploy anywhere—across any GTSS-compatible tool, platform, or vendor.</subtitle><author><name>GTSS Team</name></author><entry><title type="html">GTSS: Building the Future of Traffic Signals from First Principles</title><link href="https://redmond2742.github.io/GTSS/2025/09/20/gtss-traffic-signals-first-principles.html" rel="alternate" type="text/html" title="GTSS: Building the Future of Traffic Signals from First Principles" /><published>2025-09-20T00:00:00+00:00</published><updated>2025-09-20T00:00:00+00:00</updated><id>https://redmond2742.github.io/GTSS/2025/09/20/gtss-traffic-signals-first-principles</id><content type="html" xml:base="https://redmond2742.github.io/GTSS/2025/09/20/gtss-traffic-signals-first-principles.html"><![CDATA[<blockquote>
+  <p>Stretch your Vision. See what can be, not just what is. -David J Schwartz</p>
+</blockquote>
+
+<p>Aristotle believed that all knowledge begins with first principles—the most basic truths from which everything else can be built. If we apply that thinking to traffic signals assets, the first principles are clear: the configuration parameters behind the traffic signal.</p>
+
+<p>Phase numbers, detector locations, speed limits, street names—these are the building blocks of every tool, model, and decision we make in traffic engineering.</p>
+
+<p>In developing traffic tools such as <a href="https://github.com/redmond2742/SSOSS">Safe Sightings of Signs and Signals (SSOSS)</a> and <a href="https://www.trafficsignalkit.com/">Traffic Signal Kit</a>, it becomes clear they all rely on one constant: accurate intersection configuration data. And every single time, it became clear how challenging it is to gather, format, and share this information in a way that works across different systems. That’s why <a href="https://redmond2742.github.io/GTSS/">GTSS (General Traffic Signal Specification)</a> was created.</p>
+
+<p><img src="/GTSS/assets/images/TrafficSignalKit.com-ConfigurationInput.png" alt="Intersection Configuration in www.TrafficSignalKit.com" /></p>
+
+<h2 id="gtss-basics">GTSS Basics</h2>
+
+<p>The 1.0 release of GTSS includes four foundational files:</p>
+
+<p><strong>agencies.txt</strong> – Who owns or manages the signals</p>
+
+<p><strong>signals.txt</strong> – Where the signals are</p>
+
+<p><strong>phasing.txt</strong> – How the signals operate</p>
+
+<p><strong>detectors.txt</strong> – How vehicles, bicycles, and pedestrians are detected</p>
+
+<p>Optionally, all this information can be <a href="https://transitfeeds.com/feeds">made public similar to GTFS</a>. Fundamentally, these files are simple, but powerful—allowing agencies and developers to describe intersections in a consistent, open format. But this is just the beginning!</p>
+
+<h2 id="a-vision-for-gtss">A Vision for GTSS</h2>
+
+<p>The roadmap for GTSS extends well beyond these four files. By building on the v1.0 foundation, GTSS can enable a new generation of tools, checks, and services that are currently cost-prohibitive. Here are just a few possibilities:</p>
+
+<h3 id="safety-checks">Safety Checks</h3>
+
+<p>Today, GTSS can already identify permissive phasing—highlighting where left-turn movements may create conflict. But with timing data added to GTSS, tools could automatically check for safety events at the intersection.</p>
+
+<h3 id="coordination-across-agencies">Coordination Across Agencies</h3>
+
+<p>Signals don’t operate in isolation—they are part of corridors and networks. Yet today, coordination parameters such as cycle lengths, offsets, and splits often stay locked inside local systems.</p>
+
+<p>If GTSS expands to include these timing parameters and schedules, agencies could compare coordination settings across jurisdictional boundaries. This would identify gaps or mismatches in synchronization to provide smoother travel for all users, regardless of city or county lines.</p>
+
+<p>This is the next step toward true responsible cross-regional traffic management.</p>
+
+<h3 id="efficiency">Efficiency</h3>
+
+<p>Using an expanded version of GTSS that includes timing and phasing information, agencies can identify and address the factors that cause unnecessary delays and improve traffic flow through traffic signals.</p>
+
+<p>Gap settings reflecting traffic demand
+Identify locations where broken detectors are causing the most delays.</p>
+
+<p>Each of these features would help pinpoint inefficiencies, prioritize maintenance, and provide insightful data-driven decision-making.</p>
+
+<h2 id="smarter-apps-for-the-public">Smarter Apps for the Public</h2>
+
+<p>One of the most exciting possibilities for GTSS lies in how it can unlock an ecosystem of apps and tools—just as <a href="https://gtfs.org/resources/using-data/">GTFS transformed public transit.</a> With a clean, universal foundation of signal data, developers no longer have to reinvent the wheel every time they want to analyze or visualize traffic signals.</p>
+
+<p>Imagine a navigation app that doesn’t just avoid congestion, but actually knows the signal timing ahead for accurate traffic estimates and real-time information to drivers. With timing, coordination, and schedule information included in GTSS, apps could:</p>
+
+<ul>
+  <li>Estimate green time availability at upcoming signals for bikes and vehicles</li>
+  <li>Integrate with navigation tools to reduce delays and emissions.</li>
+  <li>Help transit vehicles and freight optimize their routes in real time.</li>
+</ul>
+
+<p>This is more than just convenience—it’s acceleration. Instead of months of procurement, training, and setup, agencies could spin up decision-support tools in hours. Small cities without dedicated technical teams could benefit as much as large agencies. Private developers, traffic modelers, and researchers would be able to experiment and innovate faster, lowering barriers for <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8386158/">exponential progress</a>.</p>
+
+<h2 id="why-it-matters">Why It Matters</h2>
+
+<p>This vision is all about making streets safer, more efficient, and more sustainable for everyone. Agencies save money by reducing redundant work and avoiding vendor lock-in. Planners and researchers gain insights that were once buried in proprietary, inaccessible systems. The public benefits from smoother travel, safer crossings, and smarter apps.</p>
+
+<p>Just as <a href="https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html">GTFS became the foundation for an entire ecosystem of transit tools</a>, GTSS can become the foundation for the next generation of traffic signal innovation.</p>]]></content><author><name>GTSS Team</name></author><category term="Future Focused Vision, Explore GTSS" /><summary type="html"><![CDATA[Explore GTSS: the General Traffic Signal Specification that standardizes traffic signal data. Learn how first principles, open formats, and consistent intersection information can improve safety, efficiency, and innovation in traffic engineering.]]></summary></entry><entry><title type="html">Introducing a General Traffic Signal Specification (GTSS)</title><link href="https://redmond2742.github.io/GTSS/2025/08/16/introduction-to-GTSS.html" rel="alternate" type="text/html" title="Introducing a General Traffic Signal Specification (GTSS)" /><published>2025-08-16T00:00:00+00:00</published><updated>2025-08-16T00:00:00+00:00</updated><id>https://redmond2742.github.io/GTSS/2025/08/16/introduction-to-GTSS</id><content type="html" xml:base="https://redmond2742.github.io/GTSS/2025/08/16/introduction-to-GTSS.html"><![CDATA[<p>Configuring traffic signals shouldn’t feel like reinventing the wheel every time. Information like phasing, detector channels, and the physical location of each signal is currently stored and managed in countless incompatible formats across different traffic systems. This patchwork approach makes setup slow, error-prone, and difficult to scale. While standards such as <a href="https://ops.fhwa.dot.gov/arterial_mgmt/rpt/sig_tim_proc/sect_3.htm#:~:text=UTDF%20can%20be%20used%20to,and%20traffic%20signal%20controller%20hardware.">UTDF</a> and <a href="https://www.aldridgetrafficcontrollers.com.au/products/traffic-signal-controllers/atsc4/spat-data">SPaT</a> address specific use cases, they don’t provide a universal, widely adopted format for sharing and managing core traffic signal configuration. It’s time for a simpler, more consistent way to handle signal data.</p>
+
+<p>Imagine if there was a general specification – one that could serve all these needs, cut vendor lock-in, eliminate repetitive work (<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Do Not Repeat Yourself</a>), and provide a simplified, unified view of traffic signal data.</p>
+
+<p>We’ve seen this transformation before in transit with the <a href="https://gtfs.org/">General Transit Feed Specification</a> (<a href="https://en.wikipedia.org/wiki/GTFS">GTFS</a>). This simple set of seven text files gave transit agencies a standard way to publish routes, stops, and schedules. The result? Massive time, cost, and effort savings for agencies, a thriving ecosystem of developers building free apps, and tools that benefit transit agencies and riders alike. Publicly publishing and following an open standard turned out to be a huge value add for everyone involved.</p>
+
+<p><a href="https://etatransit.com/blog/navigating-the-transit-revolution-unveiling-the-power-of-gtfs/">GTFS proved something powerful</a>: a simple, open, text-based format can unify an entire industry. Before GTFS, transit data was trapped in proprietary formats or unpublished, making it expensive and time-consuming to share routes, stops, and schedules. After GTFS, agencies could publish their data once, in a standard format, and instantly make it usable by hundreds of tools and millions of people. That same winning formula can be applied to traffic signals — and that’s exactly the vision behind the General Traffic Signal Specification (GTSS).</p>
+
+<p>The initial v1.0 of GTSS is intentionally simple. Only four text files are required:</p>
+
+<ul>
+  <li><strong>agency.txt</strong> — identifies the agnecy information associated with the traffic signals defined in the other GTSS files. Parameters include the agency ID, name, web address, timezone and email contact.</li>
+  <li><strong>signals.txt</strong> — lists signal ID, latitude and longitude information for the center of the intersection, and street names associated with each direction.</li>
+  <li><strong>phases.txt</strong> — defines phases and the lane and movement type through the intersection, number of lanes, compass bearing of the approach and the posted speed limit.</li>
+  <li><strong>detectors.txt</strong> — defines channels associated with phases for a specific signal, where these detection areas are in relation to stop bar and size, and expected objects are detected.</li>
+</ul>
+
+<blockquote>
+  <p><strong>UPDATE</strong> GTSS V1.1 updates this to 2 additional files for approaches and basic timing. <a href="https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html">Read more about the Version 1.1 update.</a></p>
+</blockquote>
+
+<p>With just these four files, the potential for rapid implementation and the development of entirely new tools becomes possible. What once required complex systems can now be built with simple, accessible data. Some of the improvements this enables include:</p>
+
+<ul>
+  <li>
+    <p><a href="https://ops.fhwa.dot.gov/publications/fhwahop20002/ch2.htm">Automated Traffic Signal Performance Measures</a> (<a href="https://traffic.dot.ga.gov/ATSPM">ATSPM</a>) — GTSS provides standardized intersection configuration, making ATSPM setup faster, more accurate, and easier to maintain.</p>
+  </li>
+  <li>
+    <p>Mapping and visualization tools — Every signal can be geolocated and displayed on interactive maps without extra work.</p>
+  </li>
+  <li>
+    <p>Instant intersection diagrams — The phase and approach files allow for auto-generated phase and movement diagrams, revealing protected and permissive phasing.</p>
+  </li>
+  <li>
+    <p>Innovation ecosystem — With an open, common format, third parties can build analytics dashboards, simulation tools, and safety applications without reinventing the wheel for each agency.</p>
+  </li>
+</ul>
+
+<p>The goal of GTSS isn’t just to make life easier for traffic engineers — it’s to create a universal foundation for sharing and using traffic signal data across agencies, vendors, researchers, and even connected and autonomous vehicles. Just as GTFS transformed how the world interacts with public transit, GTSS has the potential to do the same for traffic signals: breaking down silos, enabling interoperability, and accelerating innovation. For those who want to dive deeper into the technical details, the GTSS Docs provide a comprehensive guide to the specification and its files.</p>]]></content><author><name>GTSS Team</name></author><category term="release" /><summary type="html"><![CDATA[GTSS introduces a simple, consistent format to standardize and share traffic signal configuration data.]]></summary></entry><entry><title type="html">A History of GTFS: How a Open Standard Transformed Transit</title><link href="https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html" rel="alternate" type="text/html" title="A History of GTFS: How a Open Standard Transformed Transit" /><published>2025-08-16T00:00:00+00:00</published><updated>2025-08-16T00:00:00+00:00</updated><id>https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS</id><content type="html" xml:base="https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html"><![CDATA[<p>The <a href="https://gtfs.org/">General Transit Feed Specification</a> (<a href="https://github.com/google/transit/tree/master/gtfs/spec/en">GTFS</a>) is one of the most influential open data standards in the world of public transportation. What started as a collaboration between a single transit agency and Google has since grown into a global standard that powers countless apps, tools, and innovations. Here’s a brief look at how it all began and why it matters today.</p>
+
+<blockquote>
+  <p><a href="https://d1wqtxts1xzle7.cloudfront.net/34686172/BeyondTransparency-libre.pdf?1410334820=&amp;response-content-disposition=inline%3B+filename%3DTable_of_Contents_Preface.pdf&amp;Expires=1755410876&amp;Signature=A62hVlZfmcw26XWrN6PjgAMoK1nUyFVqo-sSx7TpMAF9WE3064l0cWvTGe-RrEodp4T61qSlcLGyCpLL2ys1HFYm6IcE8S71P0Y8iGXbtvv9ZlEJCRGaZUcua9VCfZh~xrNGcWdcEX7lVKdwdIq64D7nc9xrzV1ClLcK6tBlPOET9CIsMEGfCRxePGSHe2t2rBBqkWdLcuevNirbTcrmp2cd-wIzU7intfY7cDDaXm9wp4ipG1-kl5b7HPX7S3~ieHt5uA3xeRp~78zq3sUPu3yb-ZPRbPOS2NSPaj6~fBPoBfm1RGkLp7ZLtn9LgvmQH0J4gmZB8kk3du0~Vrbgog__&amp;Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=136">A more detailed history of GTFS as explained by Tri Met employee, Bibiana McHugh, can be found in Chapter 10</a> of <a href="https://beyondtransparency.org/">Beyond Transparency - Open Data and the Future of Civic Innovation</a> .</p>
+</blockquote>
+
+<h2 id="the-google-transit-problem">The Google Transit Problem</h2>
+
+<p>In 2005, Google set out to make its new product, Google Transit, more useful. To do this, they needed a way for transit schedules and route data to be consistently formatted so they could be displayed alongside driving directions in Google Maps.</p>
+
+<p>Google partnered with TriMet, the regional transit agency serving the Portland, Oregon area, to design a simple text-based format that described routes, stops, trips, and schedules. This collaboration became the seed of what is now known as GTFS.</p>
+
+<h2 id="release-of-the-specification">Release of the Specification</h2>
+
+<p>The format was first released in 2006 as the <em>Google Transit Feed Specification</em>. By publishing the specification openly, Google allowed other transit agencies to adopt it without licensing fees or proprietary restrictions.</p>
+
+<p>This decision to make it open was pivotal, as it meant GTFS was not just a format for Google but a shared standard that anyone could use. Soon after, the name was shortened to the <em>General Transit Feed Specification</em>, reflecting its broader role across the entire transit industry.</p>
+
+<p>At its core, <a href="https://www.youtube.com/watch?v=8OQKHhu1VgQ">GTFS is simple yet powerful</a>. The specification is a set of comma-separated text files, all packaged together in a single ZIP file. These files define the essential building blocks of a transit system—everything from who runs the service, to where stops are located, to how vehicles move through space and time.</p>
+
+<p>The required files include:</p>
+
+<ul>
+  <li>
+    <p><strong>agency.txt</strong> – Identifies the transit agency or brand providing the service (often the public-facing name riders recognize).</p>
+  </li>
+  <li>
+    <p><strong>stops.txt</strong> – Lists all stop or station locations, including their geographic coordinates.</p>
+  </li>
+  <li>
+    <p><strong>routes.txt</strong> – Defines each route a vehicle travels, such as a bus line or rail service.</p>
+  </li>
+  <li>
+    <p><strong>trips.txt</strong> – Breaks routes down into individual trips, describing the specific journeys vehicles make.</p>
+  </li>
+  <li>
+    <p><strong>stop_times.txt</strong> – Provides the schedule details, showing the exact arrival and departure times for each stop on each trip.</p>
+  </li>
+  <li>
+    <p><strong>calendar.txt</strong> – Defines the regular days of operation (e.g., weekdays, weekends, holidays).</p>
+  </li>
+  <li>
+    <p><strong>calendar_dates.txt</strong> – Handles exceptions to the schedule, such as special events, one-off service days, or holiday adjustments.</p>
+  </li>
+</ul>
+
+<p>Together, these seven files establish a complete digital schedule that any application can interpret. This simplicity is what made GTFS so successful so that developers, startups, and transit agencies could easily adopt it without needing specialized software or complicated databases.</p>
+
+<h2 id="gtfs-going-mainstream">GTFS Going Mainstream</h2>
+
+<p>Following TriMet’s lead, agencies across North America and eventually around the world began publishing their data in GTFS. What made GTFS especially powerful was its simplicity: just a handful of CSV text files contained everything needed to describe a transit system’s basic schedule and routes. That low barrier to entry meant even smaller agencies with limited technical resources could participate.</p>
+
+<p>As adoption grew, GTFS became much more than just a way to show transit directions in Google Maps. <a href="https://www.locationaware.usf.edu/wp-content/uploads/2010/02/The-Many-Uses-of-GTFS-Data-%E2%80%93-ITS-America-submission-abbreviated.pdf">Developers, researchers, and civic technologists began using the data to build trip planners, accessibility tools, real-time arrival apps, and performance analysis dashboards</a>. Over time, extensions to GTFS (like <a href="https://en.wikipedia.org/wiki/GTFS_Realtime">GTFS-Realtime</a> for live vehicle positions and service alerts, and more recent efforts around <a href="https://gtfs.org/community/extensions/flex/">GTFS-Flex</a> for demand-responsive transit) expanded its usefulness even further.</p>
+
+<p>Today, thousands of transit agencies across the globe <a href="https://gtfs.org/getting-started/publish/">publish GTFS feeds</a>, making it one of the most widely adopted open data standards in transportation. Its success has helped level the playing field: a small rural bus system can be just as visible to riders as a large metropolitan rail network. By lowering technical barriers and fostering a vibrant ecosystem of apps and services, GTFS has transformed how people plan, use, and understand public transportation.</p>]]></content><author><name>GTSS Team</name></author><category term="Transit Data Standards" /><summary type="html"><![CDATA[This post explores the origins of GTFS at Google, its widespread adoption by transit agencies, and the value it provides through open, standardized transit data.]]></summary></entry><entry><title type="html">GTSS Version 1.1 - Flexible Foundation for Every Intersection</title><link href="https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html" rel="alternate" type="text/html" title="GTSS Version 1.1 - Flexible Foundation for Every Intersection" /><published>2025-01-04T00:00:00+00:00</published><updated>2025-01-04T00:00:00+00:00</updated><id>https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1</id><content type="html" xml:base="https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html"><![CDATA[<p>The <a href="https://redmond2742.github.io/GTSS/">General Traffic Signal Specification (GTSS)</a> was created with a simple goal:</p>
+
+<blockquote>
+  <p>make intersection configuration easier and more consistent to rapidly prototype new software tools.</p>
+</blockquote>
+
+<p>As GTSS was peer reviewed and used by practitioners, it became clear that scaling it across many agencies and intersection types requires some modifications for greater flexibility.</p>
+
+<p><strong>GTSS v1.1 is the first step in that direction.</strong></p>
+
+<p>This release introduces two important additions:</p>
+
+<ul>
+  <li>
+    <p><a href="https://redmond2742.github.io/GTSS/documentation/approaches/">approaches.txt</a></p>
+  </li>
+  <li>
+    <p><a href="https://redmond2742.github.io/GTSS/documentation/basic_timings/">basic_timings.txt</a></p>
+  </li>
+</ul>
+
+<p>Together, they make GTSS more expressive, more general, and better aligned with how traffic engineers actually think about intersections.</p>
+
+<hr />
+
+<h2 id="introducing-approachestxt"><strong>Introducing approaches.txt</strong></h2>
+
+<p>In GTSS v1.1, intersection street approaches are now explicitly defined in a dedicated file: approaches.txt</p>
+
+<p>Instead of assigning street names and speed limits directly to phases, GTSS now assigns them to approaches, which better reflects the physical world.</p>
+
+<p>This unlocks several key improvements:</p>
+
+<ul>
+  <li>
+    <p>An intersection can have multiple approaches with different street names</p>
+  </li>
+  <li>
+    <p>Street names, street compass bearings and posted speeds are defined once, consistently</p>
+  </li>
+  <li>
+    <p>Multiple phases can be assigned detailed approach information</p>
+  </li>
+</ul>
+
+<h3 id="the-approachestxt-format">The approaches.txt Format</h3>
+
+<p>Each row in approaches.txt describes a physical approach to the intersection. Fields include:</p>
+
+<ul>
+  <li>Approach ID</li>
+  <li>Signal ID</li>
+  <li>Street name</li>
+  <li>Compass bearing</li>
+  <li>Posted speed limit</li>
+</ul>
+
+<h4 id="approachestxt-format">Approaches.txt format</h4>
+
+<blockquote>
+  <p>approach_id, signal_id, street_name, compass_bearing, posted_speed</p>
+</blockquote>
+
+<p>Where, approach_id is now linked in phases.txt.</p>
+
+<hr />
+
+<h2 id="introducing-basic_timingstxt"><strong>Introducing basic_timings.txt</strong></h2>
+
+<p>GTSS v1.1 also introduces a new optional file, basic_timings.txt. This file adds essential timing parameters without turning GTSS into a full timing specification. Its goal is not to replace detailed timing sheets, but to enable safety checks, support analytics, allow real-time estimation, and open the door to pedestrian-focused tools.</p>
+
+<h3 id="the-basic_timingstxt-file">The basic_timings.txt File</h3>
+
+<p>Each row describes a single phase basic timing parameters. These include:</p>
+
+<ul>
+  <li>Phase</li>
+  <li>Signal_ID</li>
+  <li>Minimum Green</li>
+  <li>Maximum Green</li>
+  <li>Yellow Change Interval</li>
+  <li>All Clearance Interval</li>
+  <li>Pedestrian Walk Interval</li>
+  <li>Pedestrian Clearance Interval</li>
+  <li>Leading Pedestrian Interval</li>
+  <li>Vehicle Recall Type</li>
+  <li>Pedestrian Recall</li>
+</ul>
+
+<h4 id="basic_timingtxt-format">basic_timing.txt format</h4>
+
+<blockquote>
+  <p>phase, signal_id, ped_walk, ped_clearance, lpi, min_green, max_green, yellow, all_red, veh_recall_type</p>
+</blockquote>
+
+<p>With basic_timings.txt, GTSS can now support simplified pedestrian safety audits, <a href="https://onlinepubs.trb.org/onlinepubs/nchrp/docs/NCHRP03-95_FR.pdf">red and yellow clearance analysis</a>, timing sanity checks, and timing simulations. Including <a href="https://highways.dot.gov/safety/proven-safety-countermeasures/leading-pedestrian-interval">Leading Pedestrian Intervals</a> is intentional, as pedestrian safety is increasingly central to signal operations.</p>
+
+<hr />
+
+<h2 id="the-benefits-of-gtss-v11"><strong>The Benefits of GTSS v1.1</strong></h2>
+
+<p>Early versions of GTSS leaned heavily on phases as the primary organizing structure. While effective, this approach showed limitations when applied to Multi-phase approaches and complex street naming conventions.</p>
+
+<p>GTSS v1.1 shifts the focus slightly from phases alone to approaches as first-class objects, while preserving compatibility with phase-based control logic. Adding basic timing values further expands GTSS into a more capable and <a href="https://en.wikipedia.org/wiki/Vision_Zero">pedestrian safety-focused</a> specification.</p>]]></content><author><name>GTSS Team</name></author><category term="release" /><summary type="html"><![CDATA[New approaches.txt and basic_timings.txt to add flexibility and improved pedestrian safety functionality.]]></summary></entry></feed>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | GTSS – General Traffic Signal Specification | Open Standard + Simple Format</title>
+    <meta name="description" content="Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).">
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Documentation | GTSS – General Traffic Signal Specification Open Standard + Simple Format</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Documentation" />
+<meta name="author" content="GTSS Team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Complete guide to implementing and working with the General Traffic Signal Specification (GTSS)." />
+<meta property="og:description" content="Complete guide to implementing and working with the General Traffic Signal Specification (GTSS)." />
+<link rel="canonical" href="https://redmond2742.github.io/GTSS/documentation/agency/" />
+<meta property="og:url" content="https://redmond2742.github.io/GTSS/documentation/agency/" />
+<meta property="og:site_name" content="GTSS – General Traffic Signal Specification Open Standard + Simple Format" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Documentation" />
+<meta name="twitter:site" content="@gtss_official" />
+<meta name="twitter:creator" content="@GTSS Team" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"GTSS Team"},"description":"Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).","headline":"Documentation","url":"https://redmond2742.github.io/GTSS/documentation/agency/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/GTSS/assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/GTSS/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/GTSS/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+    <header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/GTSS/" class="logo">
+                <span class="logo-icon">🚦</span>
+                GTSS
+            </a>
+            
+    
+    
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="/GTSS/" >Home</a></li>
+                    <li><a href="/GTSS/app/" >App</a></li>
+                    <li><a href="/GTSS/documentation/" >Docs</a></li>
+                    <li><a href="/GTSS/blog/" >Blog</a></li>
+                    <li><a href="/GTSS/about/" >About</a></li>
+                    
+
+                   
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+    
+    <main>
+        <div class="container">
+    <div class="page">
+        <header class="page-header">
+            <h1 class="page-title">Documentation</h1>
+            
+                <p class="page-description">Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).</p>
+            
+        </header>
+
+        <div class="doc-layout" style="display: flex; gap: 2rem; align-items: flex-start;">
+            <aside class="doc-sidebar" 
+                style="border: 1px solid #ccc; 
+                       border-radius: 6px; 
+                       padding: 0.75rem 1rem; 
+                       background-color: #fff; 
+                       box-shadow: 0 1px 3px rgba(0,0,0,0.08); 
+                       width: max-content;">
+                <nav>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/">Overview</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/agency/">agency.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/signals/">signals.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/approaches/">approaches.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/phases/">phases.txt</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/GTSS/documentation/basic_timings/">basic_timings.txt</a></li>
+                        <li><a href="/GTSS/documentation/detectors/">detectors.txt</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="doc-content" 
+                style="flex: 1; 
+                       border: 1px solid #ccc; 
+                       border-radius: 6px; 
+                       padding: 1.5rem; 
+                       background-color: #fff; 
+                       box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+                <div class="doc-overview">
+                    <h2 id="agencytxt">agency.txt</h2>
+
+<p>agency.txt defines the agency information associated with the traffic signals defined in the other GTSS files. Parameters are listed below.</p>
+
+<p><br />
+<br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h4 id="agency_id">agency_id</h4>
+
+<p>agency_id is a self-assigned unique identifier that distinctly identifies each agency. It is referenced in other GTSS files to associate signals and data with the corresponding agency.</p>
+
+<p><br /></p>
+
+<h4 id="agency_name">agency_name</h4>
+
+<p>agency_name is the name of the agency responsible for the traffic signals.</p>
+
+<p><br /></p>
+
+<h4 id="agency_url">agency_url</h4>
+
+<p>agency_url is the web address to learn more about the agency.</p>
+
+<p><br /></p>
+
+<h4 id="agency_timezone">agency_timezone</h4>
+
+<p>agency_timezone is the timezone in which the agency operates, formatted as per <a href="https://timeapi.io/documentation/iana-timezones">IANA Time Zone Database</a> (e.g., “America/New_York”).</p>
+
+<p><br /></p>
+
+<h4 id="agency_email">agency_email</h4>
+
+<p>agency_email is the contact email for the agency, used for inquiries related to GTSS configuration.</p>
+
+<p><br />
+<br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h3 id="example">Example</h3>
+
+<pre><code class="language-csv">agency_id,agency_name,agency_url,agency_timezone,agency_email
+1,whooville,http://www.city-of-whooville.gov,America/New_York,contact@
+whooville.gov
+</code></pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GTSS – General Traffic Signal Specification | Open Standard + Simple Format</h3>
+                <p>The General Traffic Signal Specification (GTSS) is an open standard for signal phasing, detector configuration, and traffic control. Define once, deploy anywhere—across any GTSS-compatible tool, platform, or vendor.</p>
+            </div>
+            <div class="footer-section">
+                <h4>References</h4>
+                <ul>
+                    <li><a href="/GTSS/about/">About</a></li>
+                    <li><a href="/GTSS/documentation/">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="/GTSS/app/">App</a></li>
+                    <li><a href="/GTSS/blog/">Blog</a></li>
+                    <li><a href="https://github.com/redmond2742/GTSS" target="_blank">GitHub</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           
+</p>
+            <p>&copy; 2026 GTSS Team. Released into the public domain under 
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color:#4FC3F7;">
+    CC0 1.0 Universal (CC0) Public Domain Dedication
+  </a>.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/GTSS/assets/js/main.js"></script>
+</body>
+</html>

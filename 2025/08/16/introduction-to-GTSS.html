@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducing a General Traffic Signal Specification (GTSS) | GTSS – General Traffic Signal Specification | Open Standard + Simple Format</title>
+    <meta name="description" content="GTSS introduces a simple, consistent format to standardize and share traffic signal configuration data.">
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Introducing a General Traffic Signal Specification (GTSS) | GTSS – General Traffic Signal Specification Open Standard + Simple Format</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Introducing a General Traffic Signal Specification (GTSS)" />
+<meta name="author" content="GTSS Team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="GTSS introduces a simple, consistent format to standardize and share traffic signal configuration data." />
+<meta property="og:description" content="GTSS introduces a simple, consistent format to standardize and share traffic signal configuration data." />
+<link rel="canonical" href="https://redmond2742.github.io/GTSS/2025/08/16/introduction-to-GTSS.html" />
+<meta property="og:url" content="https://redmond2742.github.io/GTSS/2025/08/16/introduction-to-GTSS.html" />
+<meta property="og:site_name" content="GTSS – General Traffic Signal Specification Open Standard + Simple Format" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-16T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Introducing a General Traffic Signal Specification (GTSS)" />
+<meta name="twitter:site" content="@gtss_official" />
+<meta name="twitter:creator" content="@GTSS Team" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"GTSS Team"},"dateModified":"2025-08-16T00:00:00+00:00","datePublished":"2025-08-16T00:00:00+00:00","description":"GTSS introduces a simple, consistent format to standardize and share traffic signal configuration data.","headline":"Introducing a General Traffic Signal Specification (GTSS)","mainEntityOfPage":{"@type":"WebPage","@id":"https://redmond2742.github.io/GTSS/2025/08/16/introduction-to-GTSS.html"},"url":"https://redmond2742.github.io/GTSS/2025/08/16/introduction-to-GTSS.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/GTSS/assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/GTSS/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/GTSS/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+    <header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/GTSS/" class="logo">
+                <span class="logo-icon">🚦</span>
+                GTSS
+            </a>
+            
+    
+    
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="/GTSS/" >Home</a></li>
+                    <li><a href="/GTSS/app/" >App</a></li>
+                    <li><a href="/GTSS/documentation/" >Docs</a></li>
+                    <li><a href="/GTSS/blog/" >Blog</a></li>
+                    <li><a href="/GTSS/about/" >About</a></li>
+                    
+
+                   
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+    
+    <main>
+        <div class="container">
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">Introducing a General Traffic Signal Specification (GTSS)</h1>
+            <div class="post-meta">
+                <time datetime="2025-08-16T00:00:00+00:00">August 16, 2025</time>
+                 • <span>GTSS Team</span>
+                
+                    <div class="post-tags">
+                        
+                            <span class="tag">release</span>
+                        
+                    </div>
+                
+            </div>
+        </header>
+        
+        <div class="post-content">
+            <p>Configuring traffic signals shouldn’t feel like reinventing the wheel every time. Information like phasing, detector channels, and the physical location of each signal is currently stored and managed in countless incompatible formats across different traffic systems. This patchwork approach makes setup slow, error-prone, and difficult to scale. While standards such as <a href="https://ops.fhwa.dot.gov/arterial_mgmt/rpt/sig_tim_proc/sect_3.htm#:~:text=UTDF%20can%20be%20used%20to,and%20traffic%20signal%20controller%20hardware.">UTDF</a> and <a href="https://www.aldridgetrafficcontrollers.com.au/products/traffic-signal-controllers/atsc4/spat-data">SPaT</a> address specific use cases, they don’t provide a universal, widely adopted format for sharing and managing core traffic signal configuration. It’s time for a simpler, more consistent way to handle signal data.</p>
+
+<p>Imagine if there was a general specification – one that could serve all these needs, cut vendor lock-in, eliminate repetitive work (<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Do Not Repeat Yourself</a>), and provide a simplified, unified view of traffic signal data.</p>
+
+<p>We’ve seen this transformation before in transit with the <a href="https://gtfs.org/">General Transit Feed Specification</a> (<a href="https://en.wikipedia.org/wiki/GTFS">GTFS</a>). This simple set of seven text files gave transit agencies a standard way to publish routes, stops, and schedules. The result? Massive time, cost, and effort savings for agencies, a thriving ecosystem of developers building free apps, and tools that benefit transit agencies and riders alike. Publicly publishing and following an open standard turned out to be a huge value add for everyone involved.</p>
+
+<p><a href="https://etatransit.com/blog/navigating-the-transit-revolution-unveiling-the-power-of-gtfs/">GTFS proved something powerful</a>: a simple, open, text-based format can unify an entire industry. Before GTFS, transit data was trapped in proprietary formats or unpublished, making it expensive and time-consuming to share routes, stops, and schedules. After GTFS, agencies could publish their data once, in a standard format, and instantly make it usable by hundreds of tools and millions of people. That same winning formula can be applied to traffic signals — and that’s exactly the vision behind the General Traffic Signal Specification (GTSS).</p>
+
+<p>The initial v1.0 of GTSS is intentionally simple. Only four text files are required:</p>
+
+<ul>
+  <li><strong>agency.txt</strong> — identifies the agnecy information associated with the traffic signals defined in the other GTSS files. Parameters include the agency ID, name, web address, timezone and email contact.</li>
+  <li><strong>signals.txt</strong> — lists signal ID, latitude and longitude information for the center of the intersection, and street names associated with each direction.</li>
+  <li><strong>phases.txt</strong> — defines phases and the lane and movement type through the intersection, number of lanes, compass bearing of the approach and the posted speed limit.</li>
+  <li><strong>detectors.txt</strong> — defines channels associated with phases for a specific signal, where these detection areas are in relation to stop bar and size, and expected objects are detected.</li>
+</ul>
+
+<blockquote>
+  <p><strong>UPDATE</strong> GTSS V1.1 updates this to 2 additional files for approaches and basic timing. <a href="https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html">Read more about the Version 1.1 update.</a></p>
+</blockquote>
+
+<p>With just these four files, the potential for rapid implementation and the development of entirely new tools becomes possible. What once required complex systems can now be built with simple, accessible data. Some of the improvements this enables include:</p>
+
+<ul>
+  <li>
+    <p><a href="https://ops.fhwa.dot.gov/publications/fhwahop20002/ch2.htm">Automated Traffic Signal Performance Measures</a> (<a href="https://traffic.dot.ga.gov/ATSPM">ATSPM</a>) — GTSS provides standardized intersection configuration, making ATSPM setup faster, more accurate, and easier to maintain.</p>
+  </li>
+  <li>
+    <p>Mapping and visualization tools — Every signal can be geolocated and displayed on interactive maps without extra work.</p>
+  </li>
+  <li>
+    <p>Instant intersection diagrams — The phase and approach files allow for auto-generated phase and movement diagrams, revealing protected and permissive phasing.</p>
+  </li>
+  <li>
+    <p>Innovation ecosystem — With an open, common format, third parties can build analytics dashboards, simulation tools, and safety applications without reinventing the wheel for each agency.</p>
+  </li>
+</ul>
+
+<p>The goal of GTSS isn’t just to make life easier for traffic engineers — it’s to create a universal foundation for sharing and using traffic signal data across agencies, vendors, researchers, and even connected and autonomous vehicles. Just as GTFS transformed how the world interacts with public transit, GTSS has the potential to do the same for traffic signals: breaking down silos, enabling interoperability, and accelerating innovation. For those who want to dive deeper into the technical details, the GTSS Docs provide a comprehensive guide to the specification and its files.</p>
+
+        </div>
+        
+        <footer class="post-footer">
+            <div class="share-buttons">
+                <h4>Share this post:</h4>
+                <a href="https://twitter.com/intent/tweet?text=Introducing%20a%20General%20Traffic%20Signal%20Specification%20(GTSS)&url=https://redmond2742.github.io/2025/08/16/introduction-to-GTSS.html" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://redmond2742.github.io/2025/08/16/introduction-to-GTSS.html" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </footer>
+    </article>
+    
+    <nav class="post-navigation">
+        
+            <a href="/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html" class="nav-previous">
+                <span>← Previous</span>
+                <strong>GTSS Version 1.1 - Flexible Foundation for Every Intersection</strong>
+            </a>
+        
+        
+            <a href="/GTSS/2025/08/16/history-of-GTFS.html" class="nav-next">
+                <span>Next →</span>
+                <strong>A History of GTFS: How a Open Standard Transformed Transit</strong>
+            </a>
+        
+    </nav>
+</div>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GTSS – General Traffic Signal Specification | Open Standard + Simple Format</h3>
+                <p>The General Traffic Signal Specification (GTSS) is an open standard for signal phasing, detector configuration, and traffic control. Define once, deploy anywhere—across any GTSS-compatible tool, platform, or vendor.</p>
+            </div>
+            <div class="footer-section">
+                <h4>References</h4>
+                <ul>
+                    <li><a href="/GTSS/about/">About</a></li>
+                    <li><a href="/GTSS/documentation/">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="/GTSS/app/">App</a></li>
+                    <li><a href="/GTSS/blog/">Blog</a></li>
+                    <li><a href="https://github.com/redmond2742/GTSS" target="_blank">GitHub</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           
+</p>
+            <p>&copy; 2026 GTSS Team. Released into the public domain under 
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color:#4FC3F7;">
+    CC0 1.0 Universal (CC0) Public Domain Dedication
+  </a>.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/GTSS/assets/js/main.js"></script>
+</body>
+</html>
