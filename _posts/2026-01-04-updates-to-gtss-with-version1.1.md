@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GTSS Version 1.1 - Flexible Foundation for Every Intersection"
-date: 2025-01-04
+date: 2026-01-04
 author: "GTSS Team"
 tags: ["release"]
 description: "New approaches.txt and basic_timings.txt to add flexibility and improved pedestrian safety functionality."

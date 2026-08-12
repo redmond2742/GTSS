@@ -5,7 +5,6 @@ description: Complete guide to implementing and working with the General Traffic
 permalink: /documentation/basic_timings/
 ---
 
-
 ## basic_timings.txt
 
 basic_timings.txt defines core signal timing parameters for each phase, including minimum green, yellow, all-red, pedestrian timings, and leading pedestrian intervals (LPIs).
@@ -42,7 +41,7 @@ ped_clearance is the pedesrian clearance interval defined for the flashing DON"T
 
 #### leading_ped_interval
 
-leading_ped_interval is the Leading Pedestrian Interval (LPI) time to provide a head start for pedestrians before conflicting vehicle movements recive a green.
+leading_ped_interval is the Leading Pedestrian Interval (LPI) time to provide a head start for pedestrians before parallel vehicle movements receive a green.
 
 <br>
 
@@ -73,7 +72,6 @@ all_red is the clearance interval after yellow when all approaches are red to al
 #### veh_recall_type
 
 veh_recall_type defines whether a phase is placed in recall to serve vehicles without requiring detection. See table for options.
-
 
 <style>
   table {
