@@ -1,10 +1,10 @@
----  
-layout: post  
-title: "GTSS Version 1.2 \- Enabling Safety Analysis"  
-date: 2026-07-08  
-author: "GTSS Team"  
-tags: \["release"\]  
-description: "Slip Lanes, Leading Pedestrian Intervals, Crosswalk Lengths and Orientations of Pedestrian Phases."  
+---
+layout: post
+title: "GTSS Version 1.2 - Enabling Safety Analysis"
+date: 2026-08-11
+author: "GTSS Team"
+tags: \["release"\]
+description: "Slip Lanes, Leading Pedestrian Intervals, Crosswalk Lengths and Orientations of Pedestrian Phases."
 ---
 
 The [General Traffic Signal Specification (GTSS)](https://redmond2742.github.io/GTSS/) was created with a simple goal:
