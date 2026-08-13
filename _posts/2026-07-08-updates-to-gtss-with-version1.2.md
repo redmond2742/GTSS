@@ -3,13 +3,13 @@ layout: post
 title: "GTSS Version 1.2 - Enabling Safety Analysis"
 date: 2026-08-11
 author: "GTSS Team"
-tags: \["release"\]
+tags: ["release"]
 description: "Slip Lanes, Leading Pedestrian Intervals, Crosswalk Lengths and Orientations of Pedestrian Phases."
 ---
 
 The [General Traffic Signal Specification (GTSS)](https://redmond2742.github.io/GTSS/) was created with a simple goal:
 
-\> Make traffic signal and intersection configuration easier, more consistent, and simpler to share. This will allow agencies, researchers, and developers to rapidly prototype new software tools and analytics.
+> Make traffic signal and intersection configuration easier, more consistent, and simpler to share. This will allow agencies, researchers, and developers to rapidly prototype new software tools and analytics.
 
 This latest update adds additional configuration related to traffic safety analysis and countermeasure evaluation. GTSS provides a simple, open, and machine-readable standard that will enable AI-enabled developers to rapidly understand traffic signal configurations without custom data translation, accelerating the development of interoperable tools that improve safety and operations.
 
@@ -19,13 +19,13 @@ The following five updates are included in this Version 1.2 release.
 
 GTSSv1.2 adds an encoding for “slip lanes” or Free Right lanes approaching an intersection. They are not phased so they have been added to the approaches.txt file and encoded with “FR”.
 
-This encoding allows for the number of lanes (\#), and whether there is a pedestrian crosswalk or not (FR-P). In some cases, these free-right treatments include additional pedestrian safety improvements, such as raised crosswalks or modified approach angles designed to slow approaching vehicles. This can be indicated with the I added for Pedestrian Improvement (\#-FR-PI). The goal here is to quickly determine where safety improvements have been made.
+This encoding allows for the number of lanes (#), and whether there is a pedestrian crosswalk or not (FR-P). In some cases, these free-right treatments include additional pedestrian safety improvements, such as raised crosswalks or modified approach angles designed to slow approaching vehicles. This can be indicated with the I added for Pedestrian Improvement (#-FR-PI). The goal here is to quickly determine where safety improvements have been made.
 
 | Free Right Encoding | Explination                             |
 | :------------------ | :-------------------------------------- |
-| \#-FR               | Free Right for Vehicles                 |
-| \#-FR-P             | Free Right with Pedestrian Crossing     |
-| \#-FR-PI            | Free Right with Pedestrian Improvements |
+| #-FR                | Free Right for Vehicles                 |
+| #-FR-P              | Free Right with Pedestrian Crossing     |
+| #-FR-PI             | Free Right with Pedestrian Improvements |
 
 2. ## Protected-Permissive Left Turns in phases.txt
 
@@ -56,9 +56,9 @@ Knowing the crosswalk distance is an important aspect of intersection safety. Th
 
 | Crosswalk Code | Code Explanation                                                                       |
 | :------------- | :------------------------------------------------------------------------------------- |
-| LE-\#          | Lane Estimated crosswalk distance (automatically calculated)                           |
-| TE-\#          | Time Estimated crosswalk distance (If available, will select the shorter of LE and TE) |
-| \#             | Measured crosswalk distance in feet (Overrides Lane and Time estimated lengths)        |
+| LE-#           | Lane Estimated crosswalk distance (automatically calculated)                           |
+| TE-#           | Time Estimated crosswalk distance (If available, will select the shorter of LE and TE) |
+| #              | Measured crosswalk distance in feet (Overrides Lane and Time estimated lengths)        |
 
 With this crosswalk estimation method, it builds off existing information from the approach phases and timing values to estimate the crosswalk length if one is not provided. If a measured crosswalk length is provided, this supersedes the estimated lengths.
 
