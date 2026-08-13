@@ -15,7 +15,7 @@ This latest update adds additional configuration related to traffic safety analy
 
 The following five updates are included in this Version 1.2 release.
 
-1. ## Free Right Lanes in approaches.txt
+## 1. Free Right Lanes in approaches.txt
 
 GTSSv1.2 adds an encoding for “slip lanes” or Free Right lanes approaching an intersection. They are not phased so they have been added to the approaches.txt file and encoded with “FR”.
 
@@ -27,15 +27,15 @@ This encoding allows for the number of lanes (#), and whether there is a pedestr
 | #-FR-P              | Free Right with Pedestrian Crossing     |
 | #-FR-PI             | Free Right with Pedestrian Improvements |
 
-2. ## Protected-Permissive Left Turns in phases.txt
+## 2. Protected-Permissive Left Turns in phases.txt
 
 Adding the ability to encode phased left turns as Protected-Permissive lefts. This is done by setting the phase to LPP and is displayed accordingly in the phase diagram.
 
-3. ## Leading Pedestrian Interval in timing.txt
+## 3. Leading Pedestrian Interval in timing.txt
 
-The Leading pedestrian interval (LPI) allows pedestrians to have a few seconds of walk time before the vehicle's green light. [LPI’s have been shown to be a cost-effective countermeasure to improve pedestrian safety and reduce vehicle and pedestrian conflicts](https://bellevuewa.gov/sites/default/files/media/pdf_document/2022/leading-pedestrian-intervals-research-paper-010322.pdf). Now timing.txt includes the option to include a duration for this LPI variable as a number represented in seconds.
+The Leading pedestrian interval (LPI) allows pedestrians to have a few seconds of walk time before the vehicle's green light. [LPI’s have been shown to be a cost-effective countermeasure to improve pedestrian safety and reduce vehicle and pedestrian conflicts](https://bellevuewa.gov/sites/default/files/media/pdf_document/2022/leading-pedestrian-intervals-research-paper-010322.pdf). Now `timing.txt` includes the option to include a duration for this LPI variable as a number represented in seconds.
 
-4. ## Pedestrian Crossing Types in phases.txt
+## 4. Pedestrian Crossing Types in phases.txt
 
 Configuring pedestrian crossings is another aspect that needs attention with the last release of GTSS. Previously, this was simply a boolean value (0 or 1). However, many intersections have pedestrian crossings that don’t always align with the approach, and other intersections have diagonal crossings. To account for this, in phases.txt, PedX has been updated to allow for integers. This allows for backwards compatibility with the previously accepted 0 and 1, and now extends to multiple other types of crossings. Below is a table of these numbered selections.
 
@@ -50,7 +50,7 @@ Configuring pedestrian crossings is another aspect that needs attention with the
 | 6            | Both Diagonal Crosswalks                                                                   |
 | 7            | All Crosswalks in all directions (Full Pedestrian Scramble)                                |
 
-5. ## Crosswalk Length, Estimated from lanes, Estimated from Time, and entered value (phases.txt)
+## 5. Crosswalk Length, Estimated from lanes, Estimated from Time, and entered value (phases.txt)
 
 Knowing the crosswalk distance is an important aspect of intersection safety. This includes knowing where the longest crosswalks are, to cross-checking timing values, and making sure they meet timing standards.
 
