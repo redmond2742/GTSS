@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A History of GTFS: How a Open Standard Transformed Transit | GTSS – General Traffic Signal Specification | Open Standard + Simple Format</title>
+    <meta name="description" content="This post explores the origins of GTFS at Google, its widespread adoption by transit agencies, and the value it provides through open, standardized transit data.">
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>A History of GTFS: How a Open Standard Transformed Transit | GTSS – General Traffic Signal Specification Open Standard + Simple Format</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="A History of GTFS: How a Open Standard Transformed Transit" />
+<meta name="author" content="GTSS Team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This post explores the origins of GTFS at Google, its widespread adoption by transit agencies, and the value it provides through open, standardized transit data." />
+<meta property="og:description" content="This post explores the origins of GTFS at Google, its widespread adoption by transit agencies, and the value it provides through open, standardized transit data." />
+<link rel="canonical" href="https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html" />
+<meta property="og:url" content="https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html" />
+<meta property="og:site_name" content="GTSS – General Traffic Signal Specification Open Standard + Simple Format" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-16T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="A History of GTFS: How a Open Standard Transformed Transit" />
+<meta name="twitter:site" content="@gtss_official" />
+<meta name="twitter:creator" content="@GTSS Team" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"GTSS Team"},"dateModified":"2025-08-16T00:00:00+00:00","datePublished":"2025-08-16T00:00:00+00:00","description":"This post explores the origins of GTFS at Google, its widespread adoption by transit agencies, and the value it provides through open, standardized transit data.","headline":"A History of GTFS: How a Open Standard Transformed Transit","mainEntityOfPage":{"@type":"WebPage","@id":"https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html"},"url":"https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/GTSS/assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/GTSS/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/GTSS/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+    <header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/GTSS/" class="logo">
+                <span class="logo-icon">🚦</span>
+                GTSS
+            </a>
+            
+    
+    
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="/GTSS/" >Home</a></li>
+                    <li><a href="/GTSS/app/" >App</a></li>
+                    <li><a href="/GTSS/documentation/" >Docs</a></li>
+                    <li><a href="/GTSS/blog/" >Blog</a></li>
+                    <li><a href="/GTSS/about/" >About</a></li>
+                    
+
+                   
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+    
+    <main>
+        <div class="container">
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">A History of GTFS: How a Open Standard Transformed Transit</h1>
+            <div class="post-meta">
+                <time datetime="2025-08-16T00:00:00+00:00">August 16, 2025</time>
+                 • <span>GTSS Team</span>
+                
+                    <div class="post-tags">
+                        
+                            <span class="tag">Transit Data Standards</span>
+                        
+                    </div>
+                
+            </div>
+        </header>
+        
+        <div class="post-content">
+            <p>The <a href="https://gtfs.org/">General Transit Feed Specification</a> (<a href="https://github.com/google/transit/tree/master/gtfs/spec/en">GTFS</a>) is one of the most influential open data standards in the world of public transportation. What started as a collaboration between a single transit agency and Google has since grown into a global standard that powers countless apps, tools, and innovations. Here’s a brief look at how it all began and why it matters today.</p>
+
+<blockquote>
+  <p><a href="https://d1wqtxts1xzle7.cloudfront.net/34686172/BeyondTransparency-libre.pdf?1410334820=&amp;response-content-disposition=inline%3B+filename%3DTable_of_Contents_Preface.pdf&amp;Expires=1755410876&amp;Signature=A62hVlZfmcw26XWrN6PjgAMoK1nUyFVqo-sSx7TpMAF9WE3064l0cWvTGe-RrEodp4T61qSlcLGyCpLL2ys1HFYm6IcE8S71P0Y8iGXbtvv9ZlEJCRGaZUcua9VCfZh~xrNGcWdcEX7lVKdwdIq64D7nc9xrzV1ClLcK6tBlPOET9CIsMEGfCRxePGSHe2t2rBBqkWdLcuevNirbTcrmp2cd-wIzU7intfY7cDDaXm9wp4ipG1-kl5b7HPX7S3~ieHt5uA3xeRp~78zq3sUPu3yb-ZPRbPOS2NSPaj6~fBPoBfm1RGkLp7ZLtn9LgvmQH0J4gmZB8kk3du0~Vrbgog__&amp;Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=136">A more detailed history of GTFS as explained by Tri Met employee, Bibiana McHugh, can be found in Chapter 10</a> of <a href="https://beyondtransparency.org/">Beyond Transparency - Open Data and the Future of Civic Innovation</a> .</p>
+</blockquote>
+
+<h2 id="the-google-transit-problem">The Google Transit Problem</h2>
+
+<p>In 2005, Google set out to make its new product, Google Transit, more useful. To do this, they needed a way for transit schedules and route data to be consistently formatted so they could be displayed alongside driving directions in Google Maps.</p>
+
+<p>Google partnered with TriMet, the regional transit agency serving the Portland, Oregon area, to design a simple text-based format that described routes, stops, trips, and schedules. This collaboration became the seed of what is now known as GTFS.</p>
+
+<h2 id="release-of-the-specification">Release of the Specification</h2>
+
+<p>The format was first released in 2006 as the <em>Google Transit Feed Specification</em>. By publishing the specification openly, Google allowed other transit agencies to adopt it without licensing fees or proprietary restrictions.</p>
+
+<p>This decision to make it open was pivotal, as it meant GTFS was not just a format for Google but a shared standard that anyone could use. Soon after, the name was shortened to the <em>General Transit Feed Specification</em>, reflecting its broader role across the entire transit industry.</p>
+
+<p>At its core, <a href="https://www.youtube.com/watch?v=8OQKHhu1VgQ">GTFS is simple yet powerful</a>. The specification is a set of comma-separated text files, all packaged together in a single ZIP file. These files define the essential building blocks of a transit system—everything from who runs the service, to where stops are located, to how vehicles move through space and time.</p>
+
+<p>The required files include:</p>
+
+<ul>
+  <li>
+    <p><strong>agency.txt</strong> – Identifies the transit agency or brand providing the service (often the public-facing name riders recognize).</p>
+  </li>
+  <li>
+    <p><strong>stops.txt</strong> – Lists all stop or station locations, including their geographic coordinates.</p>
+  </li>
+  <li>
+    <p><strong>routes.txt</strong> – Defines each route a vehicle travels, such as a bus line or rail service.</p>
+  </li>
+  <li>
+    <p><strong>trips.txt</strong> – Breaks routes down into individual trips, describing the specific journeys vehicles make.</p>
+  </li>
+  <li>
+    <p><strong>stop_times.txt</strong> – Provides the schedule details, showing the exact arrival and departure times for each stop on each trip.</p>
+  </li>
+  <li>
+    <p><strong>calendar.txt</strong> – Defines the regular days of operation (e.g., weekdays, weekends, holidays).</p>
+  </li>
+  <li>
+    <p><strong>calendar_dates.txt</strong> – Handles exceptions to the schedule, such as special events, one-off service days, or holiday adjustments.</p>
+  </li>
+</ul>
+
+<p>Together, these seven files establish a complete digital schedule that any application can interpret. This simplicity is what made GTFS so successful so that developers, startups, and transit agencies could easily adopt it without needing specialized software or complicated databases.</p>
+
+<h2 id="gtfs-going-mainstream">GTFS Going Mainstream</h2>
+
+<p>Following TriMet’s lead, agencies across North America and eventually around the world began publishing their data in GTFS. What made GTFS especially powerful was its simplicity: just a handful of CSV text files contained everything needed to describe a transit system’s basic schedule and routes. That low barrier to entry meant even smaller agencies with limited technical resources could participate.</p>
+
+<p>As adoption grew, GTFS became much more than just a way to show transit directions in Google Maps. <a href="https://www.locationaware.usf.edu/wp-content/uploads/2010/02/The-Many-Uses-of-GTFS-Data-%E2%80%93-ITS-America-submission-abbreviated.pdf">Developers, researchers, and civic technologists began using the data to build trip planners, accessibility tools, real-time arrival apps, and performance analysis dashboards</a>. Over time, extensions to GTFS (like <a href="https://en.wikipedia.org/wiki/GTFS_Realtime">GTFS-Realtime</a> for live vehicle positions and service alerts, and more recent efforts around <a href="https://gtfs.org/community/extensions/flex/">GTFS-Flex</a> for demand-responsive transit) expanded its usefulness even further.</p>
+
+<p>Today, thousands of transit agencies across the globe <a href="https://gtfs.org/getting-started/publish/">publish GTFS feeds</a>, making it one of the most widely adopted open data standards in transportation. Its success has helped level the playing field: a small rural bus system can be just as visible to riders as a large metropolitan rail network. By lowering technical barriers and fostering a vibrant ecosystem of apps and services, GTFS has transformed how people plan, use, and understand public transportation.</p>
+
+        </div>
+        
+        <footer class="post-footer">
+            <div class="share-buttons">
+                <h4>Share this post:</h4>
+                <a href="https://twitter.com/intent/tweet?text=A%20History%20of%20GTFS:%20How%20a%20Open%20Standard%20Transformed%20Transit&url=https://redmond2742.github.io/2025/08/16/history-of-GTFS.html" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://redmond2742.github.io/2025/08/16/history-of-GTFS.html" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </footer>
+    </article>
+    
+    <nav class="post-navigation">
+        
+            <a href="/GTSS/2025/08/16/introduction-to-GTSS.html" class="nav-previous">
+                <span>← Previous</span>
+                <strong>Introducing a General Traffic Signal Specification (GTSS)</strong>
+            </a>
+        
+        
+            <a href="/GTSS/2025/09/20/gtss-traffic-signals-first-principles.html" class="nav-next">
+                <span>Next →</span>
+                <strong>GTSS: Building the Future of Traffic Signals from First Principles</strong>
+            </a>
+        
+    </nav>
+</div>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GTSS – General Traffic Signal Specification | Open Standard + Simple Format</h3>
+                <p>The General Traffic Signal Specification (GTSS) is an open standard for signal phasing, detector configuration, and traffic control. Define once, deploy anywhere—across any GTSS-compatible tool, platform, or vendor.</p>
+            </div>
+            <div class="footer-section">
+                <h4>References</h4>
+                <ul>
+                    <li><a href="/GTSS/about/">About</a></li>
+                    <li><a href="/GTSS/documentation/">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="/GTSS/app/">App</a></li>
+                    <li><a href="/GTSS/blog/">Blog</a></li>
+                    <li><a href="https://github.com/redmond2742/GTSS" target="_blank">GitHub</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           
+</p>
+            <p>&copy; 2026 GTSS Team. Released into the public domain under 
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color:#4FC3F7;">
+    CC0 1.0 Universal (CC0) Public Domain Dedication
+  </a>.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/GTSS/assets/js/main.js"></script>
+</body>
+</html>

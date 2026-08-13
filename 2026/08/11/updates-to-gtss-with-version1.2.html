@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTSS Version 1.2 - Enabling Safety Analysis | GTSS – General Traffic Signal Specification | Open Standard + Simple Format</title>
+    <meta name="description" content="Slip Lanes, Leading Pedestrian Intervals, Crosswalk Lengths and Orientations of Pedestrian Phases.">
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>GTSS Version 1.2 - Enabling Safety Analysis | GTSS – General Traffic Signal Specification Open Standard + Simple Format</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="GTSS Version 1.2 - Enabling Safety Analysis" />
+<meta name="author" content="GTSS Team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Slip Lanes, Leading Pedestrian Intervals, Crosswalk Lengths and Orientations of Pedestrian Phases." />
+<meta property="og:description" content="Slip Lanes, Leading Pedestrian Intervals, Crosswalk Lengths and Orientations of Pedestrian Phases." />
+<link rel="canonical" href="https://redmond2742.github.io/GTSS/2026/08/11/updates-to-gtss-with-version1.2.html" />
+<meta property="og:url" content="https://redmond2742.github.io/GTSS/2026/08/11/updates-to-gtss-with-version1.2.html" />
+<meta property="og:site_name" content="GTSS – General Traffic Signal Specification Open Standard + Simple Format" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-11T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="GTSS Version 1.2 - Enabling Safety Analysis" />
+<meta name="twitter:site" content="@gtss_official" />
+<meta name="twitter:creator" content="@GTSS Team" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"GTSS Team"},"dateModified":"2026-08-11T00:00:00+00:00","datePublished":"2026-08-11T00:00:00+00:00","description":"Slip Lanes, Leading Pedestrian Intervals, Crosswalk Lengths and Orientations of Pedestrian Phases.","headline":"GTSS Version 1.2 - Enabling Safety Analysis","mainEntityOfPage":{"@type":"WebPage","@id":"https://redmond2742.github.io/GTSS/2026/08/11/updates-to-gtss-with-version1.2.html"},"url":"https://redmond2742.github.io/GTSS/2026/08/11/updates-to-gtss-with-version1.2.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/GTSS/assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/GTSS/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/GTSS/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+    <header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/GTSS/" class="logo">
+                <span class="logo-icon">🚦</span>
+                GTSS
+            </a>
+            
+    
+    
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="/GTSS/" >Home</a></li>
+                    <li><a href="/GTSS/app/" >App</a></li>
+                    <li><a href="/GTSS/documentation/" >Docs</a></li>
+                    <li><a href="/GTSS/blog/" >Blog</a></li>
+                    <li><a href="/GTSS/about/" >About</a></li>
+                    
+
+                   
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+    
+    <main>
+        <div class="container">
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">GTSS Version 1.2 - Enabling Safety Analysis</h1>
+            <div class="post-meta">
+                <time datetime="2026-08-11T00:00:00+00:00">August 11, 2026</time>
+                 • <span>GTSS Team</span>
+                
+                    <div class="post-tags">
+                        
+                            <span class="tag">release</span>
+                        
+                    </div>
+                
+            </div>
+        </header>
+        
+        <div class="post-content">
+            <p>The <a href="https://redmond2742.github.io/GTSS/">General Traffic Signal Specification (GTSS)</a> was created with a simple goal:</p>
+
+<blockquote>
+  <p>Make traffic signal and intersection configuration easier, more consistent, and simpler to share. This will allow agencies, researchers, and developers to rapidly prototype new software tools and analytics.</p>
+</blockquote>
+
+<p>This latest update adds additional configuration related to traffic safety analysis and countermeasure evaluation. GTSS provides a simple, open, and machine-readable standard that will enable AI-enabled developers to rapidly understand traffic signal configurations without custom data translation, accelerating the development of interoperable tools that improve safety and operations.</p>
+
+<p>The following five updates are included in this Version 1.2 release.</p>
+
+<h2 id="1-free-right-lanes-in-approachestxt">1. Free Right Lanes in approaches.txt</h2>
+
+<p>GTSSv1.2 adds an encoding for “slip lanes” or Free Right lanes approaching an intersection. They are not phased so they have been added to the <code class="language-plaintext highlighter-rouge">approaches.txt</code> file and encoded with “FR”.</p>
+
+<p>This encoding allows for the number of lanes (#), and whether there is a pedestrian crosswalk or not (FR-P). In some cases, these free-right treatments include additional pedestrian safety improvements, such as raised crosswalks or modified approach angles designed to slow approaching vehicles. This can be indicated with the I added for Pedestrian Improvement (#-FR-PI). The goal here is to quickly determine where safety improvements have been made.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Free Right Encoding</th>
+      <th style="text-align: left">Explination</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">#-FR</td>
+      <td style="text-align: left">Free Right for Vehicles</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">#-FR-P</td>
+      <td style="text-align: left">Free Right with Pedestrian Crossing</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">#-FR-PI</td>
+      <td style="text-align: left">Free Right with Pedestrian Improvements</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="2-protected-permissive-left-turns-in-phasestxt">2. Protected-Permissive Left Turns in phases.txt</h2>
+
+<p>Adding the ability to encode phased left turns as Protected-Permissive lefts. This is done by setting the phase to LPP in <code class="language-plaintext highlighter-rouge">phases.txt</code>.</p>
+
+<h2 id="3-leading-pedestrian-interval-in-timingtxt">3. Leading Pedestrian Interval in timing.txt</h2>
+
+<p>The Leading pedestrian interval (LPI) allows pedestrians to have a few seconds of walk time before the vehicle’s green light. <a href="https://bellevuewa.gov/sites/default/files/media/pdf_document/2022/leading-pedestrian-intervals-research-paper-010322.pdf">LPI’s have been shown to be a cost-effective countermeasure to improve pedestrian safety and reduce vehicle and pedestrian conflicts</a>. Now <code class="language-plaintext highlighter-rouge">timing.txt</code> includes the option to include a duration for this LPI variable as a integer represented in seconds.</p>
+
+<h2 id="4-pedestrian-crossing-types-in-phasestxt">4. Pedestrian Crossing Types in phases.txt</h2>
+
+<p>Configuring pedestrian crossings is another aspect that needed attention with the last release of GTSS. Previously, this was simply a boolean value (0 or 1). However, many intersections have pedestrian crossings that don’t always align with the approach, and other intersections have diagonal crossings. To account for this, in <code class="language-plaintext highlighter-rouge">phases.txt</code>, PedX has been updated to allow for integers. This allows for backwards compatibility with the previously accepted 0 and 1, and now extends to multiple other types of crossings. Below is a table of these numbered selections.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">PedX Integer</th>
+      <th style="text-align: left">Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">No Crosswalk</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">One crosswalk on the same approach as the phase assigned</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">Two crosswalks show, one on the phase approach and one 180 degrees from the approach phase</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">One crosswalk, 180 degrees from approach</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">One diagonal crosswalk</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">One diagonal Crosswalk, 180 degrees from approach phase</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">Both Diagonal Crosswalks</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">All Crosswalks in all directions (Full Pedestrian Scramble)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="5-crosswalk-length-estimated-from-lanes-estimated-from-time-and-entered-value-in-phasestxt">5. Crosswalk Length: Estimated from lanes, Estimated from Time, and entered value in phases.txt</h2>
+
+<p>Knowing the crosswalk distance is an important aspect of intersection safety. This includes knowing where the longest crosswalks are, to cross-checking timing values, and making sure they meet timing standards. This crosswalk length is now part of <code class="language-plaintext highlighter-rouge">phases.txt</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Crosswalk Code</th>
+      <th style="text-align: left">Code Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">LE-#</td>
+      <td style="text-align: left">Lane Estimated crosswalk distance (automatically calculated)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TE-#</td>
+      <td style="text-align: left">Time Estimated crosswalk distance (If available, will select the shorter of LE and TE)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">#</td>
+      <td style="text-align: left">Measured crosswalk distance in feet (Overrides Lane and Time estimated lengths)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>With this crosswalk estimation method, it builds off existing information from the approach phases and timing values to estimate the crosswalk length if one is not provided. If a measured crosswalk length is provided, this supersedes the estimated lengths.</p>
+
+<h2 id="an-extensible-framework-for-traffic-signals">An Extensible Framework for Traffic Signals</h2>
+
+<p>Each of these changes are updated in the <a href="https://redmond2742.github.io/GTSS/documentation/">GTSS Documentation</a> and <a href="https://app.gtss.dev/">GTSS Builder App</a> (<a href="https://app.gtss.dev/">app.gtss.dev</a>), making it straightforward to modify existing GTSS text files with these updated parameters.</p>
+
+<p>Even with these Version 1.2 updates, GTSS continues to serve as a direct way to create simplified real-world traffic signal layouts, configuration, and timing analysis in a structured machine-digestible format. Since GTSS is extendable with human-readable text files, <a href="https://redmond2742.github.io/GTSS/2025/08/16/history-of-GTFS.html">just like GTFS</a>, it has potential for anyone to adopt new categories of structured traffic signal data for whatever purpose you desire.</p>
+
+<ul>
+  <li>Do you wish you could map all your traffic signals that include a battery backup?
+    <ul>
+      <li>Create an <code class="language-plaintext highlighter-rouge">equipment.txt</code> file.</li>
+    </ul>
+  </li>
+  <li>Looking to analyze collision data with your signal timing?
+    <ul>
+      <li>Create a <code class="language-plaintext highlighter-rouge">collisions.txt</code> file with timestamps, direction and severity.</li>
+    </ul>
+  </li>
+  <li>Prefer to analyze countermeasures implemented?
+    <ul>
+      <li>Create a <code class="language-plaintext highlighter-rouge">countermeasures.txt</code> file showing various improvements.</li>
+    </ul>
+  </li>
+  <li>Looking to see where countermeasures have been effective?
+    <ul>
+      <li>Overlay your <code class="language-plaintext highlighter-rouge">collisions.txt</code> file with the <code class="language-plaintext highlighter-rouge">countermeasures.txt</code> file, and it’s possible to see what changes are working and what’s not.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The goal of GTSS is not to define every possible piece of traffic signal data—it is to provide a simple foundation that makes it easy to define, share, and build upon traffic signal configuration data.</p>
+
+        </div>
+        
+        <footer class="post-footer">
+            <div class="share-buttons">
+                <h4>Share this post:</h4>
+                <a href="https://twitter.com/intent/tweet?text=GTSS%20Version%201.2%20-%20Enabling%20Safety%20Analysis&url=https://redmond2742.github.io/2026/08/11/updates-to-gtss-with-version1.2.html" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://redmond2742.github.io/2026/08/11/updates-to-gtss-with-version1.2.html" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </footer>
+    </article>
+    
+    <nav class="post-navigation">
+        
+            <a href="/GTSS/2026/01/04/updates-to-gtss-with-version1.1.html" class="nav-previous">
+                <span>← Previous</span>
+                <strong>GTSS Version 1.1 - Flexible Foundation for Every Intersection</strong>
+            </a>
+        
+        
+    </nav>
+</div>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GTSS – General Traffic Signal Specification | Open Standard + Simple Format</h3>
+                <p>The General Traffic Signal Specification (GTSS) is an open standard for signal phasing, detector configuration, and traffic control. Define once, deploy anywhere—across any GTSS-compatible tool, platform, or vendor.</p>
+            </div>
+            <div class="footer-section">
+                <h4>References</h4>
+                <ul>
+                    <li><a href="/GTSS/about/">About</a></li>
+                    <li><a href="/GTSS/documentation/">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="/GTSS/app/">App</a></li>
+                    <li><a href="/GTSS/blog/">Blog</a></li>
+                    <li><a href="https://github.com/redmond2742/GTSS" target="_blank">GitHub</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           
+</p>
+            <p>&copy; 2026 GTSS Team. Released into the public domain under 
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color:#4FC3F7;">
+    CC0 1.0 Universal (CC0) Public Domain Dedication
+  </a>.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/GTSS/assets/js/main.js"></script>
+</body>
+</html>
