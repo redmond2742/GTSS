@@ -35,7 +35,7 @@ provide a way for users to contact the owner via email
 
 provide a way for users to contact the owner via web
 
-#### gtssLibrary *[array of gtss|required]*
+#### gtssLibrary *[array of gtssLibraryItem|required]*
 
 this is an array of gtssLibraryItems
 
