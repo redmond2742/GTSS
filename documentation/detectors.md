@@ -71,13 +71,13 @@ mode indicates the operational mode of the detection channel, such as "pulse", o
 
 #### length
 
-length defines the length of the detection area in feet, measured between the start and end of the detector in the path of travel.
+length defines the length of the detection area in feet, measured between the start and end of the detector in the path of travel. If agency_metric is true, this is expressed in meters.
 
 <br>
 
 #### stopbar_setback_dist
 
-stopbar_setback_dist indicates the distance in feet from the stop bar to the start of the detection area. This is used to define how far back from the stop bar the detection begins.
+stopbar_setback_dist indicates the distance in feet from the stop bar to the start of the detection area. This is used to define how far back from the stop bar the detection begins.  If agency_metric is true, this is expressed in meters.
 
 <br>
 <br>
