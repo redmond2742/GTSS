@@ -44,6 +44,12 @@ agency_timezone is the timezone in which the agency operates, formatted as per <
 agency_email is the contact email for the agency, used for inquiries related to GTSS configuration.
 
 <br>
+
+#### agency_metric
+
+agency_metric if true indicates all measurements for this agency are in metric (km, meters), if false or not included imperial measurements are used (miles, feet)
+
+<br>
 <br>
 
 <hr>
@@ -52,7 +58,7 @@ agency_email is the contact email for the agency, used for inquiries related to 
 ### Example
 
 ```csv
-agency_id,agency_name,agency_url,agency_timezone,agency_email
+agency_id,agency_name,agency_url,agency_timezone,agency_email,agency_metric
 1,whooville,http://www.city-of-whooville.gov,America/New_York,contact@
-whooville.gov
+whooville.gov,true
 ```
