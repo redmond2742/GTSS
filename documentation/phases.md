@@ -219,7 +219,7 @@ crosswalk_length provides estimated or actual distance values for pedestrian cro
   <tbody>
     <tr><td>LE-#</td><td>Lane Estimated crosswalk distance (automatically calculated)</td></tr>
     <tr><td>TE-#</td><td>Time Estimated crosswalk distance (if available, prefer to select the shorter of LE and TE)</td></tr>
-    <tr><td>#</td><td>Measured crosswalk distance in feet. This overrides lane and time estimated lengths</td></tr>
+    <tr><td>#</td><td>Measured crosswalk distance in feet. This overrides lane and time estimated lengths. If agency_metric is true, this is expressed in meters.</td></tr>
 
   </tbody>
 </table>

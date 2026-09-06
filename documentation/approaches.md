@@ -41,7 +41,7 @@ compass_bearing indicates the compass bearing of the approach to the intersectio
 
 #### posted_speed
 
-posted_speed indicates the posted speed limit for the approach to the intersection, expressed in miles per hour (mph).
+posted_speed indicates the posted speed limit for the approach to the intersection, expressed in miles per hour (mph). If agency_metric is true km per hour (kph) is used.
 
 <br>
 
