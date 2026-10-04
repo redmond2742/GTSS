@@ -18,12 +18,12 @@ We’ve seen this transformation before in transit with the [General Transit Fee
 
 The initial v1.0 of GTSS is intentionally simple. Only four text files are required:
 
-- **agency.txt** — identifies the agnecy information associated with the traffic signals defined in the other GTSS files. Parameters include the agency ID, name, web address, timezone and email contact.
+- **agency.txt** — identifies the agency information associated with the traffic signals defined in the other GTSS files. Parameters include the agency ID, name, web address, timezone and email contact.
 - **signals.txt** — lists signal ID, latitude and longitude information for the center of the intersection, and street names associated with each direction.
 - **phases.txt** — defines phases and the lane and movement type through the intersection, number of lanes, compass bearing of the approach and the posted speed limit.
 - **detectors.txt** — defines channels associated with phases for a specific signal, where these detection areas are in relation to stop bar and size, and expected objects are detected.
 
-> **UPDATE** GTSS V1.1 updates this to 2 additional files for approaches and basic timing. [Read more about the Version 1.1 update.](https://redmond2742.github.io/GTSS/2025/01/04/updates-to-gtss-with-version1.1.html)
+> **UPDATE** GTSS V1.1 updates this to 2 additional files for approaches and basic timing. [Read more about the Version 1.1 update.](https://redmond2742.github.io/GTSS/2026/01/04/updates-to-gtss-with-version1.1.html)
 
 With just these four files, the potential for rapid implementation and the development of entirely new tools becomes possible. What once required complex systems can now be built with simple, accessible data. Some of the improvements this enables include:
 

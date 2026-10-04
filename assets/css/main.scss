@@ -942,3 +942,100 @@ textarea:focus {
     flex: 1;
     padding: 20px;
   }
+
+// Adopters section
+.adopters {
+    background: #fff;
+
+    .adopters-intro {
+        max-width: 760px;
+    }
+}
+
+.adopters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.adopter-card {
+    display: flex;
+    flex-direction: column;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px rgba(0,0,0,0.1);
+    }
+
+    .adopter-icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .adopter-icon-svg {
+        height: 2.5rem;
+        margin-bottom: 0.75rem;
+
+        svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            display: block;
+        }
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        color: #2563eb;
+        margin-bottom: 0.75rem;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1rem;
+        margin: 0 0 1rem;
+        flex: 1;
+    }
+
+    .adopter-link {
+        color: #2563eb;
+        font-weight: 600;
+    }
+}
+
+.adopters-story {
+    max-width: 800px;
+    margin: 3rem auto 0;
+
+    h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #1e293b;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding-left: 1.5rem;
+        color: #64748b;
+        font-size: 1.05rem;
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        strong {
+            color: #1e293b;
+        }
+    }
+
+    p {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+}

@@ -6,7 +6,7 @@ description: Complete guide to implementing and working with the General Traffic
 
 ### GTSS Overview
 
-Welcome to the comprehensive documentation for the General Traffic Signal Specification. Whether you're a traffic engineer, system integrator, or city planner, this guide will help you understand and implement GTSS-compliant traffic signal information. GTSS Consits of 6 text (.txt) files each with their own set of parameters seperated by a comma.
+Welcome to the comprehensive documentation for the General Traffic Signal Specification. Whether you're a traffic engineer, system integrator, or city planner, this guide will help you understand and implement GTSS-compliant traffic signal information. GTSS consists of 6 text (.txt) files each with their own set of parameters separated by a comma.
 <br>
 <br>
 

@@ -136,7 +136,7 @@ description: Build and manage traffic signal specifications with ease—right in
   </div>
 
     <div style="padding: 1.5rem; background: #f7fafc; border-left: 4px solid #ef4444; border-radius: 0.5rem;">
-    <h3 style="color: #51d2f2ff; margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+    <h3 style="color: #0ea5e9; margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
       <span style="font-size: 1.5rem;">✓</span>
       Rapid Configuration
     </h3>

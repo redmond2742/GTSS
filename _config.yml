@@ -6,7 +6,6 @@ baseurl: "/GTSS"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
 
 # Plugins
 plugins:

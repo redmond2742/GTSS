@@ -12,9 +12,9 @@ The General Traffic Signal Specification (GTSS) provides a simple, open, and uni
 
 To create an open, practical standard for traffic signal systems that prioritizes safety, efficiency, interoperability, and innovation, while supporting the evolution toward smart, digitization of urban infrastructure.
 
-<h2 style="text-align: center; margin-top: 2rem;">Core Concept: Four Files, Endless Possibilities</h2>
+<h2 style="text-align: center; margin-top: 2rem;">Core Concept: Simple Files, Endless Possibilities</h2>
 
-GTSS v1.0 is intentionally simple. With just four core text files, agencies can describe every intersection in a standardized way: <br><br>
+GTSS is intentionally simple. With a small set of plain text files, agencies can describe every intersection in a standardized way. The four original core files are: <br><br>
 
 <ul style="list-style-type: disc; padding-left: 2rem;"> 
 <li><strong>agency.txt</strong> — Basic agency information: name, contact, and operational metadata.</li> 
@@ -22,7 +22,7 @@ GTSS v1.0 is intentionally simple. With just four core text files, agencies can 
 <li><strong>phases.txt</strong> — Each signal’s phasing, movement details and posted speed.</li> 
 <li><strong>detectors.txt</strong> — Detection channels, types, and setback distance and lane assignments.</li> </ul>
 <br><br>
-From these four files, agencies can power performance monitoring, mapping, visualization, and analytics, while enabling developers to build new tools and services without extra configuration or proprietary barriers.
+Together with approaches.txt and basic_timings.txt (added in v1.1), these files let agencies power performance monitoring, mapping, visualization, and analytics, while enabling developers to build new tools and services without extra configuration or proprietary barriers.
 
 <h2 style="text-align: center; margin-top: 2rem;">History</h2>
 
