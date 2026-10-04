@@ -3,8 +3,8 @@ layout: post
 title: "GTSS: Building the Future of Traffic Signals from First Principles"
 date: 2025-09-20
 author: "GTSS Team"
-tags: ["Future Focused Vision, Explore GTSS"]
-icon: "🚌"
+tags: ["Future Focused Vision", "Explore GTSS"]
+icon: "🧭"
 description: "Explore GTSS: the General Traffic Signal Specification that standardizes traffic signal data. Learn how first principles, open formats, and consistent intersection information can improve safety, efficiency, and innovation in traffic engineering."
 ---
 

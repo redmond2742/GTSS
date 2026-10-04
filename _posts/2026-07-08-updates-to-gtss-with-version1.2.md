@@ -21,7 +21,7 @@ GTSSv1.2 adds an encoding for “slip lanes” or Free Right lanes approaching a
 
 This encoding allows for the number of lanes (#), and whether there is a pedestrian crosswalk or not (FR-P). In some cases, these free-right treatments include additional pedestrian safety improvements, such as raised crosswalks or modified approach angles designed to slow approaching vehicles. This can be indicated with the I added for Pedestrian Improvement (#-FR-PI). The goal here is to quickly determine where safety improvements have been made.
 
-| Free Right Encoding | Explination                             |
+| Free Right Encoding | Explanation                             |
 | :------------------ | :-------------------------------------- |
 | #-FR                | Free Right for Vehicles                 |
 | #-FR-P              | Free Right with Pedestrian Crossing     |
@@ -31,9 +31,9 @@ This encoding allows for the number of lanes (#), and whether there is a pedestr
 
 Adding the ability to encode phased left turns as Protected-Permissive lefts. This is done by setting the phase to LPP in `phases.txt`.
 
-## 3. Leading Pedestrian Interval in timing.txt
+## 3. Leading Pedestrian Interval in basic_timings.txt
 
-The Leading pedestrian interval (LPI) allows pedestrians to have a few seconds of walk time before the vehicle's green light. [LPI’s have been shown to be a cost-effective countermeasure to improve pedestrian safety and reduce vehicle and pedestrian conflicts](https://bellevuewa.gov/sites/default/files/media/pdf_document/2022/leading-pedestrian-intervals-research-paper-010322.pdf). Now `timing.txt` includes the option to include a duration for this LPI variable as a integer represented in seconds.
+The Leading pedestrian interval (LPI) allows pedestrians to have a few seconds of walk time before the vehicle's green light. [LPI’s have been shown to be a cost-effective countermeasure to improve pedestrian safety and reduce vehicle and pedestrian conflicts](https://bellevuewa.gov/sites/default/files/media/pdf_document/2022/leading-pedestrian-intervals-research-paper-010322.pdf). Now `basic_timings.txt` includes the option to include a duration for this LPI variable as an integer represented in seconds.
 
 ## 4. Pedestrian Crossing Types in phases.txt
 

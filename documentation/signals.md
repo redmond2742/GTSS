@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Documentation
+title: "Documentation: signals.txt"
 description: Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).
 permalink: /documentation/signals/
 ---

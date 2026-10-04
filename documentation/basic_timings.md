@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Documentation
+title: "Documentation: basic_timings.txt"
 description: Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).
 permalink: /documentation/basic_timings/
 ---
@@ -35,7 +35,7 @@ ped_walk is the pedestrian walk during which the WALK indication is displayed an
 
 #### ped_clearance
 
-ped_clearance is the pedesrian clearance interval defined for the flashing DON"T WALK time provided for pedestrians to finish crossing safely.
+ped_clearance is the pedestrian clearance interval defined for the flashing DON'T WALK time provided for pedestrians to finish crossing safely.
 
 <br>
 
@@ -73,42 +73,6 @@ all_red is the clearance interval after yellow when all approaches are red to al
 
 veh_recall_type defines whether a phase is placed in recall to serve vehicles without requiring detection. See table for options.
 
-<style>
-  table {
-    width: 50%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin: 20px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  thead {
-    background: #2c3e50;
-    color: #fff;
-    text-align: left;
-  }
-
-  th, td {
-    padding: 12px 16px;
-  }
-
-  tbody tr:nth-child(even) {
-    background: #f9f9f9;
-  }
-
-  tbody tr:hover {
-    background: #eaf2f8;
-  }
-
-  th:first-child, td:first-child {
-    font-weight: bold;
-    text-align: center;
-    width: 100px;
-  }
-</style>
 <center>
 <table>
   <thead>
@@ -131,13 +95,13 @@ veh_recall_type defines whether a phase is placed in recall to serve vehicles wi
 
 #### ped_recall
 
-ped_recall is a boolean value indicating wheather the pedestrian phase is placed on recall to automatically serve the pedestrian phase every call.
+ped_recall is a boolean value indicating whether the pedestrian phase is placed on recall to automatically serve the pedestrian phase every call.
 
 <br>
 
 ### Example
 
 ```csv
-phase,signal_id,ped_walk,ped_clearance,leading_ped_interval,min_green,max_green,yellow,all-red,veh_recall_type,ped_recall
+phase,signal_id,ped_walk,ped_clearance,leading_ped_interval,min_green,max_green,yellow,all_red,veh_recall_type,ped_recall
 1,1,7,25,3,8,40,4,2,Min,true
 ```

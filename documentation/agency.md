@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Documentation
+title: "Documentation: agency.txt"
 description: Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).
 permalink: /documentation/agency/
 ---
@@ -53,6 +53,5 @@ agency_email is the contact email for the agency, used for inquiries related to 
 
 ```csv
 agency_id,agency_name,agency_url,agency_timezone,agency_email
-1,whooville,http://www.city-of-whooville.gov,America/New_York,contact@
-whooville.gov
+1,whooville,http://www.city-of-whooville.gov,America/New_York,contact@whooville.gov
 ```

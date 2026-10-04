@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Documentation
+title: "Documentation: phases.txt"
 description: Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).
 permalink: /documentation/phases/
 ---
@@ -23,7 +23,7 @@ phase is a unique identifier for each phase of a traffic signal. It is used to r
 
 #### approach_id
 
-approach_id is a id number associated with a specific approach for each traffic signal. It is defined in approaches.txt.
+approach_id is an ID number associated with a specific approach for each traffic signal. It is defined in approaches.txt.
 
 <br>
 
@@ -37,42 +37,6 @@ signal_id is a unique agency specific identifier for each traffic signal. It is 
 
 movement_type describes the type of movement allowed during the phase, such as "L" for Left Turn, "T" for through. Additional Encodings shown in table below.
 
-<style>
-  table {
-    width: 50%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin: 20px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  thead {
-    background: #2c3e50;
-    color: #fff;
-    text-align: left;
-  }
-
-  th, td {
-    padding: 12px 16px;
-  }
-
-  tbody tr:nth-child(even) {
-    background: #f9f9f9;
-  }
-
-  tbody tr:hover {
-    background: #eaf2f8;
-  }
-
-  th:first-child, td:first-child {
-    font-weight: bold;
-    text-align: center;
-    width: 100px;
-  }
-</style>
 <center>
 <table>
   <thead>
@@ -106,44 +70,8 @@ num_of_lanes indicates the number of lanes available at the stop bar for the mov
 
 #### pedX
 
-pedX is an integer value indicating wheather the defined phase includes a pedestrian phase and the approach is corresponds to as shown in the table below.
+pedX is an integer value indicating whether the defined phase includes a pedestrian phase and the approach it corresponds to as shown in the table below.
 
-<style>
-  table {
-    width: 50%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin: 20px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  thead {
-    background: #2c3e50;
-    color: #fff;
-    text-align: left;
-  }
-
-  th, td {
-    padding: 12px 16px;
-  }
-
-  tbody tr:nth-child(even) {
-    background: #f9f9f9;
-  }
-
-  tbody tr:hover {
-    background: #eaf2f8;
-  }
-
-  th:first-child, td:first-child {
-    font-weight: bold;
-    text-align: center;
-    width: 100px;
-  }
-</style>
 <center>
 <table>
   <thead>
@@ -172,42 +100,6 @@ pedX is an integer value indicating wheather the defined phase includes a pedest
 
 crosswalk_length provides estimated or actual distance values for pedestrian crosswalks. Refer to table below for types of estimation methods if available.
 
-<style>
-  table {
-    width: 50%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin: 20px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  thead {
-    background: #2c3e50;
-    color: #fff;
-    text-align: left;
-  }
-
-  th, td {
-    padding: 12px 16px;
-  }
-
-  tbody tr:nth-child(even) {
-    background: #f9f9f9;
-  }
-
-  tbody tr:hover {
-    background: #eaf2f8;
-  }
-
-  th:first-child, td:first-child {
-    font-weight: bold;
-    text-align: center;
-    width: 100px;
-  }
-</style>
 <center>
 <table>
   <thead>
@@ -234,6 +126,6 @@ crosswalk_length provides estimated or actual distance values for pedestrian cro
 ### Example
 
 ```csv
-phase,approach_id,signal_id,movement_type,num_of_lanes,ped_phase_enabled,is_overlap
-1,1,L,2,true,false
+phase,approach_id,signal_id,movement_type,num_of_lanes,pedX,crosswalk_length
+2,1,1,T,2,1,60
 ```

@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Documentation
+title: "Documentation: detectors.txt"
 description: Complete guide to implementing and working with the General Traffic Signal Specification (GTSS).
 permalink: /documentation/detectors/
 ---
@@ -89,5 +89,5 @@ stopbar_setback_dist indicates the distance in feet from the stop bar to the sta
 
 ```csv
 channel,signal_id,phase,description,purpose,vehicle_type,lane,technology_type,mode,length,stopbar_setback_dist
-1,1,1,"Main St Stop Bar detection","stop bar","car",1,"inductive loop","pulse",6,0
+1,1,1,"Main St Stop Bar detection","stop bar","car",1,"inductive_loop","pulse",6,0
 ```

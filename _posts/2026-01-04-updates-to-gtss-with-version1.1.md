@@ -79,7 +79,7 @@ Each row describes a single phase basic timing parameters. These include:
 
 #### basic_timing.txt format
 
-> phase, signal_id, ped_walk, ped_clearance, lpi, min_green, max_green, yellow, all_red, veh_recall_type
+> phase, signal_id, ped_walk, ped_clearance, leading_ped_interval, min_green, max_green, yellow, all_red, veh_recall_type, ped_recall
 
 With basic_timings.txt, GTSS can now support simplified pedestrian safety audits, [red and yellow clearance analysis](https://onlinepubs.trb.org/onlinepubs/nchrp/docs/NCHRP03-95_FR.pdf), timing sanity checks, and timing simulations. Including [Leading Pedestrian Intervals](https://highways.dot.gov/safety/proven-safety-countermeasures/leading-pedestrian-interval) is intentional, as pedestrian safety is increasingly central to signal operations.
 

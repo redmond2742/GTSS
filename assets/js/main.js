@@ -1,8 +1,3 @@
-console.log("main.js loaded");
-
-
-
-
 // Mobile menu toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');

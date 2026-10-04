@@ -26,8 +26,8 @@ layout: default
         <footer class="post-footer">
             <div class="share-buttons">
                 <h4>Share this post:</h4>
-                <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">Twitter</a>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url | append: site.baseurl | append: page.url | uri_escape }}" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url | append: site.baseurl | append: page.url | uri_escape }}" target="_blank" rel="noopener">LinkedIn</a>
             </div>
         </footer>
     </article>
